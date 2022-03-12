@@ -1,0 +1,58 @@
+{
+  "_buildCommand2" : {
+    "command" : "build",
+    "skipDependencies" : false,
+    "style" : "buildAndRun"
+  },
+  "buildCommand" : "build",
+  "configuredTargets" : [
+    {
+      "guid" : "9a455e07d4e81e22340e1800b2e35522640f22f4e946b1eb5ab7ec876933419e"
+    }
+  ],
+  "containerPath" : "/Users/zhourenxi/Desktop/my-code/Xcode/文件操作/文件操作.xcodeproj",
+  "continueBuildingAfterErrors" : false,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "arm64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "macosx",
+      "sdk" : "macosx12.1",
+      "sdkVariant" : "macos",
+      "supportedArchitectures" : [
+        "arm64e",
+        "arm64",
+        "x86_64"
+      ],
+      "targetArchitecture" : "arm64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/zhourenxi/Desktop/my-code/Xcode/文件操作/DerivedData/文件操作/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/zhourenxi/Desktop/my-code/Xcode/文件操作/DerivedData/文件操作/Build/Products",
+      "derivedDataPath" : "/Users/zhourenxi/Desktop/my-code/Xcode/文件操作/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/zhourenxi/Desktop/my-code/Xcode/文件操作/DerivedData/文件操作/Index/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/zhourenxi/Desktop/my-code/Xcode/文件操作/DerivedData/文件操作/Index/PrecompiledHeaders",
+      "pchPath" : "/Users/zhourenxi/Desktop/my-code/Xcode/文件操作/DerivedData/文件操作/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO"
+        }
+      }
+    }
+  },
+  "schemeCommand" : "launch",
+  "schemeCommand2" : "launch",
+  "shouldCollectMetrics" : false,
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}
