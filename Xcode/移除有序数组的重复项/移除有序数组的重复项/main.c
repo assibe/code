@@ -15,12 +15,13 @@ int removeDuplicates(int* nums, int numsSize){
     int right = 1;
     
     for (right = 1; right < numsSize; right++) {
-         
-        while (nums[left] == nums[right]) {
-            right++;
+        
+        if (nums[right] != nums[left]) {
+            
+            nums[dest++] = nums [left];
+            left = right;
         }
-        nums[dest++] = nums [left];
-        left = right;
+        
     }
     
     nums[dest++] = nums[left];
