@@ -24,47 +24,31 @@ struct ListNode {
 struct ListNode* removeElements(struct ListNode* head, int val){
    
     assert(head);
-    
+    struct ListNode *prev = NULL;
     struct ListNode *cur = head;
     
-    while (head -> val == val) {//排除头指针
-        
-        head = head -> next;
-        free(cur);
-        cur = head;
-        
-        if (cur -> next == NULL) {//
-            return head;
-        }
-    }
-    
-    struct ListNode *prev = head;
-    cur = cur ->next;
-    
     while (cur) {
-        
-        if (cur->val == val) {
-          
-            prev ->next = cur->next;
-            free(cur);
-            cur = NULL;
-            
-            if (prev -> next == NULL) {
-                return head;
-            }
-            
-            prev = prev -> next;
-            cur = cur->next;
-            
+        if (cur -> val != val) {
+            prev = cur;
+            cur =cur -> next;
         }
         else{
+            struct ListNode *next = cur ->next;
             
-            prev = prev ->next;
-            cur = cur -> next;
-            
-        }
-            
+            if (prev == NULL) {//   为头指针的时候，情况进行讨论
+                
+                free(cur);
+                head = next;
+                cur = next;
+            }
+            else{//不为开头的时候
+                
+                free(cur);
+                prev -> next = next;
+                cur = next;
+            }
     }
-    return head;
     
-};
+}
+    return head;
+}
