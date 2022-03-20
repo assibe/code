@@ -12,3 +12,20 @@ int main(int argc, const char * argv[]) {
     printf("Hello, World!\n");
     return 0;
 }
+struct ListNode {
+    int val;
+    struct ListNode *next;
+ };
+
+struct ListNode* middleNode(struct ListNode* head){//快慢指针
+    
+    struct ListNode *fast = head;
+    struct ListNode *low = head;
+    
+    while (fast && fast -> next) {
+        
+        fast = fast -> next ->next;
+        low = low->next->next;
+    }
+    return low;
+}
