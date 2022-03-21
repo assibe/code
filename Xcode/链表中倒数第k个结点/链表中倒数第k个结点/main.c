@@ -22,5 +22,4 @@ int main(int argc, const char * argv[]) {
 struct ListNode* FindKthToTail(struct ListNode* pListHead, int k ) {
     // write code here
     
-    
 }
