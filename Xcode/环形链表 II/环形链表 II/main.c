@@ -16,7 +16,7 @@ struct ListNode{
 
 struct ListNode *detectCycle(struct ListNode *head) {
     
-    if (head ->next == NULL) {
+    if (head ->next == NULL && head) {
         return NULL;
     }
     
