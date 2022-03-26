@@ -9,29 +9,35 @@
 #include <stdlib.h>
 #include <assert.h>
 
-struct ListNode{
+ struct ListNode{
     int val;
     struct ListNode *next;
 };
 
 struct ListNode *detectCycle(struct ListNode *head) {
     
-    if (head ->next == NULL && head) {
-        return NULL;
-    }
+    assert(head);
+    struct ListNode *low = head;
+    struct ListNode *fast = head;
     
-    struct ListNode *pA = head;
-    struct ListNode *pB = head -> next;
-    
-    while (pA) {
+    while (fast) {
         
-        pB = head;
-        for (; pB ->next != pA; pB = pB ->next) {
-            if (pA ->next == pB) {
-                return pB;
-            }
+        if (fast->next == NULL) {
+            return NULL;
         }
-        pA = pA -> next;
+        
+        low = low -> next;
+        fast = fast -> next -> next;
+        
+        if (fast == low) {
+            
+            struct ListNode *ptr = head;
+            while (ptr != low) {
+                low = low -> next;
+                ptr = ptr -> next;
+            }
+            return ptr;
+        }
     }
     return NULL;
 }
