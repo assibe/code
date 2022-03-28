@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		21D9E51D27EF5A5F0089C434 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 21D9E51C27EF5A5F0089C434 /* main.c */; };
+		21D9E53327F0A83F0089C434 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 21D9E53227F0A83F0089C434 /* main.c */; };
+		21D9E53B27F0A8560089C434 /* Stack.c in Sources */ = {isa = PBXBuildFile; fileRef = 21D9E53A27F0A8560089C434 /* Stack.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		21D9E51727EF5A5F0089C434 /* CopyFiles */ = {
+		21D9E52D27F0A83F0089C434 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,12 +24,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		21D9E51927EF5A5F0089C434 /* 栈 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "栈"; sourceTree = BUILT_PRODUCTS_DIR; };
-		21D9E51C27EF5A5F0089C434 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		21D9E52F27F0A83F0089C434 /* 栈的实现 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "栈的实现"; sourceTree = BUILT_PRODUCTS_DIR; };
+		21D9E53227F0A83F0089C434 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		21D9E53927F0A8560089C434 /* Stack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
+		21D9E53A27F0A8560089C434 /* Stack.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Stack.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		21D9E51627EF5A5F0089C434 /* Frameworks */ = {
+		21D9E52C27F0A83F0089C434 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,65 +41,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		21D9E51027EF5A5F0089C434 = {
+		21D9E52627F0A83F0089C434 = {
 			isa = PBXGroup;
 			children = (
-				21D9E51B27EF5A5F0089C434 /* 栈 */,
-				21D9E51A27EF5A5F0089C434 /* Products */,
+				21D9E53127F0A83F0089C434 /* 栈的实现 */,
+				21D9E53027F0A83F0089C434 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		21D9E51A27EF5A5F0089C434 /* Products */ = {
+		21D9E53027F0A83F0089C434 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				21D9E51927EF5A5F0089C434 /* 栈 */,
+				21D9E52F27F0A83F0089C434 /* 栈的实现 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		21D9E51B27EF5A5F0089C434 /* 栈 */ = {
+		21D9E53127F0A83F0089C434 /* 栈的实现 */ = {
 			isa = PBXGroup;
 			children = (
-				21D9E51C27EF5A5F0089C434 /* main.c */,
+				21D9E53227F0A83F0089C434 /* main.c */,
+				21D9E53927F0A8560089C434 /* Stack.h */,
+				21D9E53A27F0A8560089C434 /* Stack.c */,
 			);
-			path = "栈";
+			path = "栈的实现";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		21D9E51827EF5A5F0089C434 /* 栈 */ = {
+		21D9E52E27F0A83F0089C434 /* 栈的实现 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 21D9E52027EF5A5F0089C434 /* Build configuration list for PBXNativeTarget "栈" */;
+			buildConfigurationList = 21D9E53627F0A83F0089C434 /* Build configuration list for PBXNativeTarget "栈的实现" */;
 			buildPhases = (
-				21D9E51527EF5A5F0089C434 /* Sources */,
-				21D9E51627EF5A5F0089C434 /* Frameworks */,
-				21D9E51727EF5A5F0089C434 /* CopyFiles */,
+				21D9E52B27F0A83F0089C434 /* Sources */,
+				21D9E52C27F0A83F0089C434 /* Frameworks */,
+				21D9E52D27F0A83F0089C434 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "栈";
-			productName = "栈";
-			productReference = 21D9E51927EF5A5F0089C434 /* 栈 */;
+			name = "栈的实现";
+			productName = "栈的实现";
+			productReference = 21D9E52F27F0A83F0089C434 /* 栈的实现 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		21D9E51127EF5A5F0089C434 /* Project object */ = {
+		21D9E52727F0A83F0089C434 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
-					21D9E51827EF5A5F0089C434 = {
+					21D9E52E27F0A83F0089C434 = {
 						CreatedOnToolsVersion = 13.3;
 					};
 				};
 			};
-			buildConfigurationList = 21D9E51427EF5A5F0089C434 /* Build configuration list for PBXProject "栈" */;
+			buildConfigurationList = 21D9E52A27F0A83F0089C434 /* Build configuration list for PBXProject "栈的实现" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -104,29 +109,30 @@
 				en,
 				Base,
 			);
-			mainGroup = 21D9E51027EF5A5F0089C434;
-			productRefGroup = 21D9E51A27EF5A5F0089C434 /* Products */;
+			mainGroup = 21D9E52627F0A83F0089C434;
+			productRefGroup = 21D9E53027F0A83F0089C434 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				21D9E51827EF5A5F0089C434 /* 栈 */,
+				21D9E52E27F0A83F0089C434 /* 栈的实现 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		21D9E51527EF5A5F0089C434 /* Sources */ = {
+		21D9E52B27F0A83F0089C434 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21D9E51D27EF5A5F0089C434 /* main.c in Sources */,
+				21D9E53B27F0A8560089C434 /* Stack.c in Sources */,
+				21D9E53327F0A83F0089C434 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		21D9E51E27EF5A5F0089C434 /* Debug */ = {
+		21D9E53427F0A83F0089C434 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -184,7 +190,7 @@
 			};
 			name = Debug;
 		};
-		21D9E51F27EF5A5F0089C434 /* Release */ = {
+		21D9E53527F0A83F0089C434 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -235,7 +241,7 @@
 			};
 			name = Release;
 		};
-		21D9E52127EF5A5F0089C434 /* Debug */ = {
+		21D9E53727F0A83F0089C434 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -243,7 +249,7 @@
 			};
 			name = Debug;
 		};
-		21D9E52227EF5A5F0089C434 /* Release */ = {
+		21D9E53827F0A83F0089C434 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -254,25 +260,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		21D9E51427EF5A5F0089C434 /* Build configuration list for PBXProject "栈" */ = {
+		21D9E52A27F0A83F0089C434 /* Build configuration list for PBXProject "栈的实现" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				21D9E51E27EF5A5F0089C434 /* Debug */,
-				21D9E51F27EF5A5F0089C434 /* Release */,
+				21D9E53427F0A83F0089C434 /* Debug */,
+				21D9E53527F0A83F0089C434 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		21D9E52027EF5A5F0089C434 /* Build configuration list for PBXNativeTarget "栈" */ = {
+		21D9E53627F0A83F0089C434 /* Build configuration list for PBXNativeTarget "栈的实现" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				21D9E52127EF5A5F0089C434 /* Debug */,
-				21D9E52227EF5A5F0089C434 /* Release */,
+				21D9E53727F0A83F0089C434 /* Debug */,
+				21D9E53827F0A83F0089C434 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 21D9E51127EF5A5F0089C434 /* Project object */;
+	rootObject = 21D9E52727F0A83F0089C434 /* Project object */;
 }
