@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		21EBF81627F1F6AB00BB79E0 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 21EBF81527F1F6AB00BB79E0 /* main.c */; };
+		21EBF81E27F1FA4700BB79E0 /* Stack.c in Sources */ = {isa = PBXBuildFile; fileRef = 21EBF81D27F1FA4700BB79E0 /* Stack.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		21EBF81227F1F6AB00BB79E0 /* 括号匹配问题 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "括号匹配问题"; sourceTree = BUILT_PRODUCTS_DIR; };
 		21EBF81527F1F6AB00BB79E0 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		21EBF81C27F1FA4700BB79E0 /* Stack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
+		21EBF81D27F1FA4700BB79E0 /* Stack.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Stack.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				21EBF81527F1F6AB00BB79E0 /* main.c */,
+				21EBF81C27F1FA4700BB79E0 /* Stack.h */,
+				21EBF81D27F1FA4700BB79E0 /* Stack.c */,
 			);
 			path = "括号匹配问题";
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21EBF81E27F1FA4700BB79E0 /* Stack.c in Sources */,
 				21EBF81627F1F6AB00BB79E0 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
