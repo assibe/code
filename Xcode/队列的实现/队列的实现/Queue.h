@@ -37,5 +37,6 @@ void QueuePush(Queue* pq, QDataType x);
 void QueuePop(Queue* pq);
 bool QueueEmpty(Queue* pq);
 size_t QueueSize(Queue* pq);
- QDataType QueueFront(Queue* pq);
+QDataType QueueFront(Queue* pq);
 QDataType QueueBack(Queue* pq);
+
