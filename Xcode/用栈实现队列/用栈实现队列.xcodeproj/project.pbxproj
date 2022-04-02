@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2166497227F7FFE9005DB297 /* MyQueue.c in Sources */ = {isa = PBXBuildFile; fileRef = 2166497127F7FFE9005DB297 /* MyQueue.c */; };
+		2166497527F80411005DB297 /* Stack.c in Sources */ = {isa = PBXBuildFile; fileRef = 2166497427F80411005DB297 /* Stack.c */; };
 		218E435027F6A39500ACB2AD /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 218E434F27F6A39500ACB2AD /* main.c */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +25,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2166497027F7FFE9005DB297 /* MyQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyQueue.h; sourceTree = "<group>"; };
+		2166497127F7FFE9005DB297 /* MyQueue.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MyQueue.c; sourceTree = "<group>"; };
+		2166497327F80411005DB297 /* Stack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
+		2166497427F80411005DB297 /* Stack.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Stack.c; sourceTree = "<group>"; };
 		218E434C27F6A39500ACB2AD /* 用栈实现队列 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "用栈实现队列"; sourceTree = BUILT_PRODUCTS_DIR; };
 		218E434F27F6A39500ACB2AD /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				218E434F27F6A39500ACB2AD /* main.c */,
+				2166497027F7FFE9005DB297 /* MyQueue.h */,
+				2166497327F80411005DB297 /* Stack.h */,
+				2166497427F80411005DB297 /* Stack.c */,
+				2166497127F7FFE9005DB297 /* MyQueue.c */,
 			);
 			path = "用栈实现队列";
 			sourceTree = "<group>";
@@ -119,7 +129,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2166497527F80411005DB297 /* Stack.c in Sources */,
 				218E435027F6A39500ACB2AD /* main.c in Sources */,
+				2166497227F7FFE9005DB297 /* MyQueue.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

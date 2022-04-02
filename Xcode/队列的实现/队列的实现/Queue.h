@@ -14,29 +14,31 @@
 #include <assert.h>
 
 #endif /* Queue_h */
+typedef int  STData;
 
-typedef int QDataType;
+struct QueueNode{
+    
+    STData data;
+    struct QueueNode*next;
+};
 
-typedef struct QueueNode
-{
-    QDataType data;
-    struct QueueNode* next;
-}QNode;
+struct Queue{
+    struct QueueNode *tail;
+    struct QueueNode *head;
+};
 
-typedef struct Queue
-{
-    QNode* head;
-    QNode* tail;
+void QueueInit(struct Queue*pq);
 
-    //size_t size;
-}Queue;
+void QueuePush(struct Queue*pq, STData x);
 
-void QueueInit(Queue* pq);
-void QueueDestory(Queue* pq);
-void QueuePush(Queue* pq, QDataType x);
-void QueuePop(Queue* pq);
-bool QueueEmpty(Queue* pq);
-size_t QueueSize(Queue* pq);
-QDataType QueueFront(Queue* pq);
-QDataType QueueBack(Queue* pq);
+void QueuePop(struct Queue*pq);
 
+STData  QueuFront(struct Queue *pq);
+
+STData QueuBack(struct Queue *pq);
+
+void QueueDestroy(struct Queue *pq);
+
+bool QueuEmpty(struct Queue *pq);
+
+int QueueSize(struct Queue *pq);

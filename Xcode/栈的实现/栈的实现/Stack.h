@@ -11,32 +11,29 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
+#include <stdbool.h>
 
 #endif /* Stack_h */
 
+
+typedef int STData;
+
 struct Stack{
-    int *a;
-    int _top;
-    int _capacity;
+    STData *a;
+    int top;
+    int capacity;
 };
 
-// 初始化栈
-void StackInit(struct Stack  *ps);
+void StackInit(struct Stack*ps);
 
-// 入栈
-void StackPush(struct Stack* ps,int data);
+void StackPush(struct Stack *ps,STData x);
 
-// 出栈
-void StackPop(struct Stack* ps);
+STData StackTop(struct Stack*ps);
 
-// 获取栈顶元素
-int StackTop(struct Stack* ps);
+void StackPop(struct Stack*ps);
 
-// 获取栈中有效元素个数
-int StackSize(struct Stack* ps);
+int StackSize(struct Stack *ps);
 
-// 检测栈是否为空，如果为空返回非零结果，如果不为空返回0
-int StackEmpty(struct Stack* ps);
-
-// 销毁栈
 void StackDestroy(struct Stack *ps);
+
+bool StackEmpty(struct Stack*ps);

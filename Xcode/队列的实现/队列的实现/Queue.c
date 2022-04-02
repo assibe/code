@@ -7,105 +7,92 @@
 
 #include "Queue.h"
 
-void QueueInit(Queue* pq){//初始化
-    
+void QueueInit(struct Queue*pq){
     assert(pq);
-    pq ->tail = pq -> tail = NULL;
+    
+    pq->head = pq->tail =NULL;
 }
 
-void QueuePop(Queue* pq){
-    
+void QueuePush(struct Queue*pq, STData x){
     assert(pq);
-    assert(pq ->head &&pq ->tail);
-    QNode *next = pq -> head -> next;
-    free(pq ->head);
-    pq -> head = next;
     
-}
-
-void QueueDestory(Queue* pq){
+    struct QueueNode *newNode = (struct QueueNode*)malloc(sizeof(struct QueueNode));
+    if (newNode == NULL) {
+        printf("malloc fail");
+        exit(-1);
+    }
+    newNode->data = x;
+    newNode->next = NULL;
     
-    assert(pq);
-    QNode *cur = pq ->head;
-    while (cur) {
+    if (pq->head == NULL) {
+        pq->tail = pq->head = newNode;
         
-        cur = cur->next;
-        free(pq ->head);
-        pq -> head = cur;
-    }
-    
-    free(pq);
-    pq = NULL;
-    pq ->head = pq -> tail = NULL;
-}
-
-QNode *MakeNode(QDataType x){
-    
-    QNode * cur = malloc(sizeof(QNode));
-    assert(cur);
-    cur ->data = x;
-    cur ->next = NULL;
-    return cur;
-}
-
-void QueuePush(Queue* pq, QDataType x){
-    
-    if (pq ->head == NULL ) {
-        pq -> head = pq -> tail = MakeNode(x);
     }
     else{
-        pq -> tail -> next = MakeNode(x);
-        pq -> tail = pq ->tail ->next;
+        pq->tail->next = newNode;
+        pq->tail = pq->tail->next;
     }
 }
 
-void QueuePoP(Queue* pq){
-    
+void QueuePop(struct Queue*pq){
     assert(pq);
-    assert(pq ->head&&pq -> tail);
-    if (pq -> head ->next == NULL) {
-        free(pq ->head);
-        pq ->head = pq ->tail = NULL;
+    assert(pq->tail&&pq->head);
+    
+    if (pq->tail->next == NULL) {
+        
+        free(pq->tail);
+        pq->tail =pq->head = NULL;
+        
     }
     else{
-        QNode *next = pq -> head -> next;
-        free(pq ->head);
-        pq -> head = next;
+        struct QueueNode*next = pq->head->next;
+        free(pq->head);
+        pq->tail = next;
     }
-    
 }
 
-bool QueueEmpty(Queue* pq){
+STData QueuFront(struct Queue *pq){
     assert(pq);
-    return pq -> head ==NULL;
+    assert(pq->tail);
+    
+    return pq->tail->data;
 }
 
-size_t QueueSize(Queue* pq){
-    
+STData QueuBack(struct Queue *pq){
     assert(pq);
-    QNode *cur = pq -> head;
-    size_t Size = 0;
+    assert(pq->head);
+    
+    return pq->head->data;
+}
+
+void QueueDestroy(struct Queue *pq){
+    assert(pq);
+    assert(pq->tail&&pq->head);
+    
+    struct QueueNode*cur = pq->head;
     while (cur) {
-        Size++;
-        cur = cur ->next;
+        struct QueueNode *next = cur->next;
+        free(cur);
+        cur = next;
     }
     
-    return Size;
+    pq->tail = pq->head = NULL;
 }
 
-QDataType QueueFront(Queue* pq){
-    
+bool QueuEmpty(struct Queue *pq){
     assert(pq);
-    assert(pq -> head);
-    return pq ->head ->data;
     
+    return pq->tail == NULL;
 }
 
-QDataType QueueBack(Queue* pq){
-    
+int QueueSize(struct Queue *pq){
     assert(pq);
-    assert(pq ->head);
     
-    return pq -> tail ->data;
+    int c = 0;
+    struct QueueNode *cur = pq->tail;
+    while (cur) {
+        cur = cur->next;
+        c++;
+    }
+    return c;
 }
-
