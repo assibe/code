@@ -42,3 +42,5 @@ void AdjustUp(HeapData *pa,size_t child);
 void HeapPop(struct Heap*php);
 
 void HeapSort(HeapData *a,size_t size);
+
+void AdjustDown(HeapData*a,size_t size,size_t root);
