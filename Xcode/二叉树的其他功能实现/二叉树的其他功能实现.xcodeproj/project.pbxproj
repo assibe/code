@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		21D6EDD827FAD6B400477889 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 21D6EDD727FAD6B400477889 /* main.c */; };
-		21D6EDE027FAD6C400477889 /* Heap.c in Sources */ = {isa = PBXBuildFile; fileRef = 21D6EDDF27FAD6C400477889 /* Heap.c */; };
+		2128AE7F2805C1180032EC04 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 2128AE7E2805C1180032EC04 /* main.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		21D6EDD227FAD6B400477889 /* CopyFiles */ = {
+		2128AE792805C1180032EC04 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -24,14 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		21D6EDD427FAD6B400477889 /* 小堆的实现 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "小堆的实现"; sourceTree = BUILT_PRODUCTS_DIR; };
-		21D6EDD727FAD6B400477889 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		21D6EDDE27FAD6C400477889 /* Heap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Heap.h; sourceTree = "<group>"; };
-		21D6EDDF27FAD6C400477889 /* Heap.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Heap.c; sourceTree = "<group>"; };
+		2128AE7B2805C1180032EC04 /* 二叉树的其他功能实现 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "二叉树的其他功能实现"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2128AE7E2805C1180032EC04 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		21D6EDD127FAD6B400477889 /* Frameworks */ = {
+		2128AE782805C1180032EC04 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,99 +38,95 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		21D6EDCB27FAD6B400477889 = {
+		2128AE722805C1180032EC04 = {
 			isa = PBXGroup;
 			children = (
-				21D6EDD627FAD6B400477889 /* 小堆的实现 */,
-				21D6EDD527FAD6B400477889 /* Products */,
+				2128AE7D2805C1180032EC04 /* 二叉树的其他功能实现 */,
+				2128AE7C2805C1180032EC04 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		21D6EDD527FAD6B400477889 /* Products */ = {
+		2128AE7C2805C1180032EC04 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				21D6EDD427FAD6B400477889 /* 小堆的实现 */,
+				2128AE7B2805C1180032EC04 /* 二叉树的其他功能实现 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		21D6EDD627FAD6B400477889 /* 小堆的实现 */ = {
+		2128AE7D2805C1180032EC04 /* 二叉树的其他功能实现 */ = {
 			isa = PBXGroup;
 			children = (
-				21D6EDD727FAD6B400477889 /* main.c */,
-				21D6EDDE27FAD6C400477889 /* Heap.h */,
-				21D6EDDF27FAD6C400477889 /* Heap.c */,
+				2128AE7E2805C1180032EC04 /* main.c */,
 			);
-			path = "小堆的实现";
+			path = "二叉树的其他功能实现";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		21D6EDD327FAD6B400477889 /* 小堆的实现 */ = {
+		2128AE7A2805C1180032EC04 /* 二叉树的其他功能实现 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 21D6EDDB27FAD6B400477889 /* Build configuration list for PBXNativeTarget "小堆的实现" */;
+			buildConfigurationList = 2128AE822805C1180032EC04 /* Build configuration list for PBXNativeTarget "二叉树的其他功能实现" */;
 			buildPhases = (
-				21D6EDD027FAD6B400477889 /* Sources */,
-				21D6EDD127FAD6B400477889 /* Frameworks */,
-				21D6EDD227FAD6B400477889 /* CopyFiles */,
+				2128AE772805C1180032EC04 /* Sources */,
+				2128AE782805C1180032EC04 /* Frameworks */,
+				2128AE792805C1180032EC04 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "小堆的实现";
-			productName = "小堆的实现";
-			productReference = 21D6EDD427FAD6B400477889 /* 小堆的实现 */;
+			name = "二叉树的其他功能实现";
+			productName = "二叉树的其他功能实现";
+			productReference = 2128AE7B2805C1180032EC04 /* 二叉树的其他功能实现 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		21D6EDCC27FAD6B400477889 /* Project object */ = {
+		2128AE732805C1180032EC04 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = YES;
+				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
-					21D6EDD327FAD6B400477889 = {
+					2128AE7A2805C1180032EC04 = {
 						CreatedOnToolsVersion = 13.3;
 					};
 				};
 			};
-			buildConfigurationList = 21D6EDCF27FAD6B400477889 /* Build configuration list for PBXProject "小堆的实现" */;
+			buildConfigurationList = 2128AE762805C1180032EC04 /* Build configuration list for PBXProject "二叉树的其他功能实现" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				"zh-Hans",
 				Base,
 			);
-			mainGroup = 21D6EDCB27FAD6B400477889;
-			productRefGroup = 21D6EDD527FAD6B400477889 /* Products */;
+			mainGroup = 2128AE722805C1180032EC04;
+			productRefGroup = 2128AE7C2805C1180032EC04 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				21D6EDD327FAD6B400477889 /* 小堆的实现 */,
+				2128AE7A2805C1180032EC04 /* 二叉树的其他功能实现 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		21D6EDD027FAD6B400477889 /* Sources */ = {
+		2128AE772805C1180032EC04 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21D6EDD827FAD6B400477889 /* main.c in Sources */,
-				21D6EDE027FAD6C400477889 /* Heap.c in Sources */,
+				2128AE7F2805C1180032EC04 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		21D6EDD927FAD6B400477889 /* Debug */ = {
+		2128AE802805C1180032EC04 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -191,7 +184,7 @@
 			};
 			name = Debug;
 		};
-		21D6EDDA27FAD6B400477889 /* Release */ = {
+		2128AE812805C1180032EC04 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -242,7 +235,7 @@
 			};
 			name = Release;
 		};
-		21D6EDDC27FAD6B400477889 /* Debug */ = {
+		2128AE832805C1180032EC04 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -250,7 +243,7 @@
 			};
 			name = Debug;
 		};
-		21D6EDDD27FAD6B400477889 /* Release */ = {
+		2128AE842805C1180032EC04 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -261,25 +254,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		21D6EDCF27FAD6B400477889 /* Build configuration list for PBXProject "小堆的实现" */ = {
+		2128AE762805C1180032EC04 /* Build configuration list for PBXProject "二叉树的其他功能实现" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				21D6EDD927FAD6B400477889 /* Debug */,
-				21D6EDDA27FAD6B400477889 /* Release */,
+				2128AE802805C1180032EC04 /* Debug */,
+				2128AE812805C1180032EC04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		21D6EDDB27FAD6B400477889 /* Build configuration list for PBXNativeTarget "小堆的实现" */ = {
+		2128AE822805C1180032EC04 /* Build configuration list for PBXNativeTarget "二叉树的其他功能实现" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				21D6EDDC27FAD6B400477889 /* Debug */,
-				21D6EDDD27FAD6B400477889 /* Release */,
+				2128AE832805C1180032EC04 /* Debug */,
+				2128AE842805C1180032EC04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 21D6EDCC27FAD6B400477889 /* Project object */;
+	rootObject = 2128AE732805C1180032EC04 /* Project object */;
 }
