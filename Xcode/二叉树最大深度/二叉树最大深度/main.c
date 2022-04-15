@@ -23,5 +23,16 @@ struct TreeNode {
 
 
 int maxDepth(struct TreeNode* root){
-
+    
+    if (root == NULL) {
+        return 0;
+    }
+    size_t right = maxDepth(root->right) + 1;
+    size_t left = maxDepth(root->left) + 1;
+    //递归！
+    
+    if (right>left) {
+        return (int)right;
+    }
+    return (int)left;
 }
