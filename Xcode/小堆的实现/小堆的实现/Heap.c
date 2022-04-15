@@ -95,7 +95,7 @@ void HeapPush(struct Heap *php,HeapData x){
     AdjustUp(php->a, php->size -1);
 }
 
-void AdjustDown(HeapData*a,size_t size,size_t root){//root为调制开始的位置
+void AdjustDown(HeapData*a,size_t size,size_t root){
     
     size_t parent = root;
     size_t child = parent *2 + 1;
