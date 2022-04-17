@@ -96,3 +96,4 @@ void myQueueFree(MyQueue* obj) {
     obj->q2 =NULL;
     free(obj);
 }
+

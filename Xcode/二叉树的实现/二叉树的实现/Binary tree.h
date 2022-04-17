@@ -10,7 +10,9 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 #include <assert.h>
+
 
 #endif /* Binary_tree_h */
 
@@ -37,13 +39,13 @@ int BinaryTreeKSize(struct BinaryTreeNode  *root,int k);
 
 int BinaryTreeDepth(struct BinaryTreeNode *root);
 
+void LeveLoder(struct BinaryTreeNode *root);
 
+bool BinaryTreeComplete( struct BinaryTreeNode* root);
 
+void BinaryTreeDestory(struct BinaryTreeNode* root);
 
-
-
-
-
+struct BinaryTreeNode* CreateTree(struct BinaryTreeNode *root);
 
 
 

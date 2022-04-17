@@ -7,13 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		21027677280C7A130086C829 /* Queue.c in Sources */ = {isa = PBXBuildFile; fileRef = 21027676280C7A130086C829 /* Queue.c */; };
-		21072A72280B011400D60A6D /* Binary tree.c in Sources */ = {isa = PBXBuildFile; fileRef = 21072A71280B011400D60A6D /* Binary tree.c */; };
-		21072A74280B014D00D60A6D /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 21072A73280B014D00D60A6D /* main.c */; };
+		21072A82280B293E00D60A6D /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 21072A81280B293E00D60A6D /* main.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		21072A64280AFB4C00D60A6D /* CopyFiles */ = {
+		21072A7C280B293E00D60A6D /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,16 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		21027676280C7A130086C829 /* Queue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Queue.c; path = "../../队列的实现/队列的实现/Queue.c"; sourceTree = "<group>"; };
-		21027678280C7A290086C829 /* Queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Queue.h; path = "../../队列的实现/队列的实现/Queue.h"; sourceTree = "<group>"; };
-		21072A66280AFB4C00D60A6D /* 二叉树的实现 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "二叉树的实现"; sourceTree = BUILT_PRODUCTS_DIR; };
-		21072A70280B011400D60A6D /* Binary tree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Binary tree.h"; sourceTree = "<group>"; };
-		21072A71280B011400D60A6D /* Binary tree.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "Binary tree.c"; sourceTree = "<group>"; };
-		21072A73280B014D00D60A6D /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		21072A7E280B293E00D60A6D /* 相同的树 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "相同的树"; sourceTree = BUILT_PRODUCTS_DIR; };
+		21072A81280B293E00D60A6D /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		21072A63280AFB4C00D60A6D /* Frameworks */ = {
+		21072A7B280B293E00D60A6D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,69 +38,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		21072A5D280AFB4C00D60A6D = {
+		21072A75280B293E00D60A6D = {
 			isa = PBXGroup;
 			children = (
-				21072A68280AFB4C00D60A6D /* 二叉树的实现 */,
-				21072A67280AFB4C00D60A6D /* Products */,
+				21072A80280B293E00D60A6D /* 相同的树 */,
+				21072A7F280B293E00D60A6D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		21072A67280AFB4C00D60A6D /* Products */ = {
+		21072A7F280B293E00D60A6D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				21072A66280AFB4C00D60A6D /* 二叉树的实现 */,
+				21072A7E280B293E00D60A6D /* 相同的树 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		21072A68280AFB4C00D60A6D /* 二叉树的实现 */ = {
+		21072A80280B293E00D60A6D /* 相同的树 */ = {
 			isa = PBXGroup;
 			children = (
-				21072A73280B014D00D60A6D /* main.c */,
-				21072A71280B011400D60A6D /* Binary tree.c */,
-				21072A70280B011400D60A6D /* Binary tree.h */,
-				21027676280C7A130086C829 /* Queue.c */,
-				21027678280C7A290086C829 /* Queue.h */,
+				21072A81280B293E00D60A6D /* main.c */,
 			);
-			path = "二叉树的实现";
+			path = "相同的树";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		21072A65280AFB4C00D60A6D /* 二叉树的实现 */ = {
+		21072A7D280B293E00D60A6D /* 相同的树 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 21072A6D280AFB4C00D60A6D /* Build configuration list for PBXNativeTarget "二叉树的实现" */;
+			buildConfigurationList = 21072A85280B293E00D60A6D /* Build configuration list for PBXNativeTarget "相同的树" */;
 			buildPhases = (
-				21072A62280AFB4C00D60A6D /* Sources */,
-				21072A63280AFB4C00D60A6D /* Frameworks */,
-				21072A64280AFB4C00D60A6D /* CopyFiles */,
+				21072A7A280B293E00D60A6D /* Sources */,
+				21072A7B280B293E00D60A6D /* Frameworks */,
+				21072A7C280B293E00D60A6D /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "二叉树的实现";
-			productName = "二叉树的实现";
-			productReference = 21072A66280AFB4C00D60A6D /* 二叉树的实现 */;
+			name = "相同的树";
+			productName = "相同的树";
+			productReference = 21072A7E280B293E00D60A6D /* 相同的树 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		21072A5E280AFB4C00D60A6D /* Project object */ = {
+		21072A76280B293E00D60A6D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
-					21072A65280AFB4C00D60A6D = {
+					21072A7D280B293E00D60A6D = {
 						CreatedOnToolsVersion = 13.3.1;
 					};
 				};
 			};
-			buildConfigurationList = 21072A61280AFB4C00D60A6D /* Build configuration list for PBXProject "二叉树的实现" */;
+			buildConfigurationList = 21072A79280B293E00D60A6D /* Build configuration list for PBXProject "相同的树" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -114,31 +104,29 @@
 				en,
 				Base,
 			);
-			mainGroup = 21072A5D280AFB4C00D60A6D;
-			productRefGroup = 21072A67280AFB4C00D60A6D /* Products */;
+			mainGroup = 21072A75280B293E00D60A6D;
+			productRefGroup = 21072A7F280B293E00D60A6D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				21072A65280AFB4C00D60A6D /* 二叉树的实现 */,
+				21072A7D280B293E00D60A6D /* 相同的树 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		21072A62280AFB4C00D60A6D /* Sources */ = {
+		21072A7A280B293E00D60A6D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21027677280C7A130086C829 /* Queue.c in Sources */,
-				21072A74280B014D00D60A6D /* main.c in Sources */,
-				21072A72280B011400D60A6D /* Binary tree.c in Sources */,
+				21072A82280B293E00D60A6D /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		21072A6B280AFB4C00D60A6D /* Debug */ = {
+		21072A83280B293E00D60A6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -196,7 +184,7 @@
 			};
 			name = Debug;
 		};
-		21072A6C280AFB4C00D60A6D /* Release */ = {
+		21072A84280B293E00D60A6D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -247,7 +235,7 @@
 			};
 			name = Release;
 		};
-		21072A6E280AFB4C00D60A6D /* Debug */ = {
+		21072A86280B293E00D60A6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -255,7 +243,7 @@
 			};
 			name = Debug;
 		};
-		21072A6F280AFB4C00D60A6D /* Release */ = {
+		21072A87280B293E00D60A6D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -266,25 +254,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		21072A61280AFB4C00D60A6D /* Build configuration list for PBXProject "二叉树的实现" */ = {
+		21072A79280B293E00D60A6D /* Build configuration list for PBXProject "相同的树" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				21072A6B280AFB4C00D60A6D /* Debug */,
-				21072A6C280AFB4C00D60A6D /* Release */,
+				21072A83280B293E00D60A6D /* Debug */,
+				21072A84280B293E00D60A6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		21072A6D280AFB4C00D60A6D /* Build configuration list for PBXNativeTarget "二叉树的实现" */ = {
+		21072A85280B293E00D60A6D /* Build configuration list for PBXNativeTarget "相同的树" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				21072A6E280AFB4C00D60A6D /* Debug */,
-				21072A6F280AFB4C00D60A6D /* Release */,
+				21072A86280B293E00D60A6D /* Debug */,
+				21072A87280B293E00D60A6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 21072A5E280AFB4C00D60A6D /* Project object */;
+	rootObject = 21072A76280B293E00D60A6D /* Project object */;
 }

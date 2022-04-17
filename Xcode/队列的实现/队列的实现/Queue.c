@@ -51,7 +51,7 @@ void QueuePop(struct Queue*pq){
     }
 }
 
-STData QueuFront(struct Queue *pq){
+STData QueueFront(struct Queue *pq){
     assert(pq);
     assert(pq->tail);
     

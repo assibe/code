@@ -12,9 +12,9 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include <assert.h>
-
+#include "Binary tree.h"
 #endif /* Queue_h */
-typedef int  STData;
+typedef struct BinaryTreeNode*  STData;
 
 struct QueueNode{
     
@@ -33,7 +33,7 @@ void QueuePush(struct Queue*pq, STData x);
 
 void QueuePop(struct Queue*pq);
 
-STData  QueuFront(struct Queue *pq);
+STData  QueueFront(struct Queue *pq);
 
 STData QueuBack(struct Queue *pq);
 

@@ -6,6 +6,7 @@
 //
 
 #include "Binary tree.h"
+#include "Queue.h"
 
 struct BinaryTreeNode *BuyBinary(BTDataType x){
     
@@ -66,3 +67,88 @@ int BinaryTreeDepth(struct BinaryTreeNode *root){
     
     return BinaryTreeDepth(root->left) > BinaryTreeDepth(root->right) ? BinaryTreeDepth(root->left) +1:BinaryTreeDepth(root->right)+1;
 }
+
+void LeveLoder(struct BinaryTreeNode *root){//逐层遍历，利用队列的性质进行内容的书写！
+    struct  Queue q;
+    QueueInit(&q);
+    
+    if (root) {
+        QueuePush(&q, root);
+    }
+    
+    while (!QueuEmpty(&q)) {
+        //出一个入其子节点！
+        struct BinaryTreeNode *front = QueueFront(&q);
+        QueuePop(&q);
+        
+        printf("%d",front->data);
+        if (front->left) {
+            QueuePush(&q, front->left);
+        }
+        
+        if (front->right) {
+            QueuePush(&q, front->right);
+        }
+        //入队列
+    }
+    
+    printf("\n");
+    QueueDestroy(&q);
+}
+
+bool BinaryTreeComplete( struct BinaryTreeNode* root){
+    
+    struct Queue q;
+    QueueInit(&q);
+    
+    if (root) {
+        QueuePush(&q, root);
+    }
+    
+    while (!QueuEmpty(&q)) {
+        struct BinaryTreeNode *front = QueueFront(&q);
+        QueuePop(&q);
+        
+        if (front == NULL) {
+            break;
+        }
+        
+        QueuePush(&q, root->left);
+        QueuePush(&q,root->right);
+    }
+    
+    while (!QueuEmpty(&q)) {
+        struct BinaryTreeNode *front = QueueFront(&q);
+        
+        QueuePop(&q);
+        if (front) {
+            return false;
+        }
+    }
+    
+    return true;
+}
+
+
+void BinaryTreeDestory(struct BinaryTreeNode* root){
+    
+    if (root) {
+        BinaryTreeDestory(root->right);
+        BinaryTreeDestory(root->right);
+    }
+    free(root);
+    root = NULL;
+}
+
+
+
+
+//{
+//    if (*root)
+//    {
+//        BinaryTreeDestory(&(*root)->_left);
+//        BinaryTreeDestory(&(*root)->_right);
+//        free(*root);
+//        *root = NULL;
+//    }
+//}
