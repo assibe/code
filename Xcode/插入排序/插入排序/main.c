@@ -7,11 +7,6 @@
 
 #include <stdio.h>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
-    return 0;
-}
 
 void InsertSort(int *a,int n){
     
@@ -31,4 +26,14 @@ void InsertSort(int *a,int n){
         a[end + 1] = tmp;
     }
 }
+
+
+int main(int argc, const char * argv[]) {
+    // insert code here...
+    printf("Hello, World!\n");
+    int a[] = {323,43,4554,6,4542,4231,45};
+    InsertSort(a,sizeof(a)/ sizeof(int));
+    return 0;
+}
+
 
