@@ -55,7 +55,37 @@ void QuickPart2(int *a,int begin,int end){//基本上都是使用这个模版！
 
 
 
-
+int GetMiderInderx(int *a,int left,int right){//找中间数值
+    
+    int mid = left + (right - left) / 2;
+    
+    if (a[left] < a[mid]) {
+        
+        if (a[mid] < a[right]) {
+            return mid;
+        }
+        else
+            if (a[left] < a[right]) {
+                return right;
+            }
+        else
+            return left;
+    }
+    else{
+        
+        if (a[left] < a[right]) {
+            return left;
+        }
+        else{
+            if (a[right] > a[mid]) {
+                return right;
+            }
+            else
+                return mid;
+        }
+    }
+    
+}
 
 int PartSort1(int *a,int right,int left){
     
