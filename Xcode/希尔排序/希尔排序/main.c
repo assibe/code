@@ -8,65 +8,42 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void ShellSort(int *a,int n){//插入排序
+
+
+void ShellSort(int *a,int n){
     
-//    int gap = 3;
-//    for (int b = 0; b <gap; b++) {//多层循环进行，进行！
-//
-//        int i = b;
-//        for (; i < n -gap/*限制的倒数第二个东西！一定小于这个东西*/; i += gap) {//一组排序
-//
-//            int end = i;
-//            int tmp = a[end +gap];
-//
-//            while (end >= 0) {
-//
-//                if (tmp < a[end]) {
-//
-//                    a[end + gap] = a[end];
-//                    end -= gap;
-//
-//                }
-//                else
-//                    break;
-//            }
-//            a[end + gap] = tmp;
-//        }
-//    }
-    
-    
-    //通过两层进行控制
-    int gap = n;
-    while (gap > 1) {
-        
-        gap = gap/3 + 1 ;
-        
-        for (int i = 0; i < n -gap/*限制的倒数第二个东西！一定小于这个东西*/; i += gap) {//一组排序
-    //对于组的插入（相隔距离gap个进行简单的顺序的更换，根据大小。去除外面一层循环）
+    int gap = 3;
+    for (; gap > 0; gap--) {//间隔可以自选，但是最后肯定必须要有gap == 1，经过一次插入排序
+        for (int m = 0; m < gap; m++) {
+            
+            for (int i = m; i < n - gap; i += gap) {//单层插入
+                
                 int end = i;
-                int tmp = a[end +gap];
-    
+                int tmp = a[end + gap];
+                
                 while (end >= 0) {
-    
-                    if (tmp < a[end]) {
-    
+                    
+                    if (tmp > a[end]) {
+                        break;
+                    }
+                    else{
                         a[end + gap] = a[end];
                         end -= gap;
-    
                     }
-                    else
-                        break;
                 }
                 a[end + gap] = tmp;
             }
+            
+        }
     }
-};
-
+    
+   
+}
 
 int main(int argc, const char * argv[]) {
     // insert code here...
     
-    int a[] = {123,4342,43,54,32,21};
+    int a[] = {32,54,65,76,32,12,223,1,234,54,43,32,32,43,32};
     ShellSort(a, sizeof(a)/sizeof(int));
     
     printf("Hello, World!\n");

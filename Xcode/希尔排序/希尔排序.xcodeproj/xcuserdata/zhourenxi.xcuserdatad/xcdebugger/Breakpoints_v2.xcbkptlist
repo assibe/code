@@ -14,8 +14,8 @@
             filePath = "&#x5e0c;&#x5c14;&#x6392;&#x5e8f;/main.c"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
             landmarkName = "main(argc, argv)"
             landmarkType = "9">
          </BreakpointContent>
