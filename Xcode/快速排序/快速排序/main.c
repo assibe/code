@@ -109,7 +109,7 @@ int PartSort1(int *a,int right,int left){
 
 void QuickSort1(int *a,int begin,int end){//基础法
     
-    if (begin == end) {
+    if (begin >= end) {
         return;
     }
     int keyi = PartSort1(a, begin, end);
@@ -117,6 +117,7 @@ void QuickSort1(int *a,int begin,int end){//基础法
     QuickSort1(a, begin, keyi - 1);
     QuickSort1(a, keyi + 1, end);
 }
+
 int PartSort3(int *a,int left,int right){//前后指针法
     
     int prev,cur;
