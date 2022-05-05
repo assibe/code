@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		21EEF9922816FAAB00538E0E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21EEF9912816FAAB00538E0E /* main.cpp */; };
+		21A5DA4128239FD9008E4B92 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 21A5DA4028239FD9008E4B92 /* main.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		21EEF98C2816FAAB00538E0E /* CopyFiles */ = {
+		21A5DA3B28239FD9008E4B92 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,12 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		21EEF98E2816FAAB00538E0E /* 测试 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "测试"; sourceTree = BUILT_PRODUCTS_DIR; };
-		21EEF9912816FAAB00538E0E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		21A5DA3D28239FD9008E4B92 /* 4. 寻找两个正序数组的中位数 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "4. 寻找两个正序数组的中位数"; sourceTree = BUILT_PRODUCTS_DIR; };
+		21A5DA4028239FD9008E4B92 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		21EEF98B2816FAAB00538E0E /* Frameworks */ = {
+		21A5DA3A28239FD9008E4B92 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,65 +38,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		21EEF9852816FAAB00538E0E = {
+		21A5DA3428239FD9008E4B92 = {
 			isa = PBXGroup;
 			children = (
-				21EEF9902816FAAB00538E0E /* 测试 */,
-				21EEF98F2816FAAB00538E0E /* Products */,
+				21A5DA3F28239FD9008E4B92 /* 4. 寻找两个正序数组的中位数 */,
+				21A5DA3E28239FD9008E4B92 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		21EEF98F2816FAAB00538E0E /* Products */ = {
+		21A5DA3E28239FD9008E4B92 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				21EEF98E2816FAAB00538E0E /* 测试 */,
+				21A5DA3D28239FD9008E4B92 /* 4. 寻找两个正序数组的中位数 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		21EEF9902816FAAB00538E0E /* 测试 */ = {
+		21A5DA3F28239FD9008E4B92 /* 4. 寻找两个正序数组的中位数 */ = {
 			isa = PBXGroup;
 			children = (
-				21EEF9912816FAAB00538E0E /* main.cpp */,
+				21A5DA4028239FD9008E4B92 /* main.c */,
 			);
-			path = "测试";
+			path = "4. 寻找两个正序数组的中位数";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		21EEF98D2816FAAB00538E0E /* 测试 */ = {
+		21A5DA3C28239FD9008E4B92 /* 4. 寻找两个正序数组的中位数 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 21EEF9952816FAAB00538E0E /* Build configuration list for PBXNativeTarget "测试" */;
+			buildConfigurationList = 21A5DA4428239FD9008E4B92 /* Build configuration list for PBXNativeTarget "4. 寻找两个正序数组的中位数" */;
 			buildPhases = (
-				21EEF98A2816FAAB00538E0E /* Sources */,
-				21EEF98B2816FAAB00538E0E /* Frameworks */,
-				21EEF98C2816FAAB00538E0E /* CopyFiles */,
+				21A5DA3928239FD9008E4B92 /* Sources */,
+				21A5DA3A28239FD9008E4B92 /* Frameworks */,
+				21A5DA3B28239FD9008E4B92 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "测试";
-			productName = "测试";
-			productReference = 21EEF98E2816FAAB00538E0E /* 测试 */;
+			name = "4. 寻找两个正序数组的中位数";
+			productName = "4. 寻找两个正序数组的中位数";
+			productReference = 21A5DA3D28239FD9008E4B92 /* 4. 寻找两个正序数组的中位数 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		21EEF9862816FAAB00538E0E /* Project object */ = {
+		21A5DA3528239FD9008E4B92 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
-					21EEF98D2816FAAB00538E0E = {
+					21A5DA3C28239FD9008E4B92 = {
 						CreatedOnToolsVersion = 13.3.1;
 					};
 				};
 			};
-			buildConfigurationList = 21EEF9892816FAAB00538E0E /* Build configuration list for PBXProject "测试" */;
+			buildConfigurationList = 21A5DA3828239FD9008E4B92 /* Build configuration list for PBXProject "4. 寻找两个正序数组的中位数" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -104,29 +104,29 @@
 				en,
 				Base,
 			);
-			mainGroup = 21EEF9852816FAAB00538E0E;
-			productRefGroup = 21EEF98F2816FAAB00538E0E /* Products */;
+			mainGroup = 21A5DA3428239FD9008E4B92;
+			productRefGroup = 21A5DA3E28239FD9008E4B92 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				21EEF98D2816FAAB00538E0E /* 测试 */,
+				21A5DA3C28239FD9008E4B92 /* 4. 寻找两个正序数组的中位数 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		21EEF98A2816FAAB00538E0E /* Sources */ = {
+		21A5DA3928239FD9008E4B92 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21EEF9922816FAAB00538E0E /* main.cpp in Sources */,
+				21A5DA4128239FD9008E4B92 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		21EEF9932816FAAB00538E0E /* Debug */ = {
+		21A5DA4228239FD9008E4B92 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -184,7 +184,7 @@
 			};
 			name = Debug;
 		};
-		21EEF9942816FAAB00538E0E /* Release */ = {
+		21A5DA4328239FD9008E4B92 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -235,7 +235,7 @@
 			};
 			name = Release;
 		};
-		21EEF9962816FAAB00538E0E /* Debug */ = {
+		21A5DA4528239FD9008E4B92 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -243,7 +243,7 @@
 			};
 			name = Debug;
 		};
-		21EEF9972816FAAB00538E0E /* Release */ = {
+		21A5DA4628239FD9008E4B92 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -254,25 +254,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		21EEF9892816FAAB00538E0E /* Build configuration list for PBXProject "测试" */ = {
+		21A5DA3828239FD9008E4B92 /* Build configuration list for PBXProject "4. 寻找两个正序数组的中位数" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				21EEF9932816FAAB00538E0E /* Debug */,
-				21EEF9942816FAAB00538E0E /* Release */,
+				21A5DA4228239FD9008E4B92 /* Debug */,
+				21A5DA4328239FD9008E4B92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		21EEF9952816FAAB00538E0E /* Build configuration list for PBXNativeTarget "测试" */ = {
+		21A5DA4428239FD9008E4B92 /* Build configuration list for PBXNativeTarget "4. 寻找两个正序数组的中位数" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				21EEF9962816FAAB00538E0E /* Debug */,
-				21EEF9972816FAAB00538E0E /* Release */,
+				21A5DA4528239FD9008E4B92 /* Debug */,
+				21A5DA4628239FD9008E4B92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 21EEF9862816FAAB00538E0E /* Project object */;
+	rootObject = 21A5DA3528239FD9008E4B92 /* Project object */;
 }

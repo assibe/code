@@ -6,6 +6,7 @@
 //
 
 #include "Stack.h"
+
 void StackInit(struct Stack*ps){
     ps->a = NULL;
     ps->top = 0;

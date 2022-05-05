@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		215C1BE327321D57007EBA5A /* 用递归阶乘 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "用递归阶乘"; sourceTree = BUILT_PRODUCTS_DIR; };
 		215C1BE627321D57007EBA5A /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		21D4B1D9282043680074D6BC /* lib测试.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "lib测试.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +44,7 @@
 			children = (
 				215C1BE527321D57007EBA5A /* 用递归阶乘 */,
 				215C1BE427321D57007EBA5A /* Products */,
+				21D4B1D8282043680074D6BC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +62,14 @@
 				215C1BE627321D57007EBA5A /* main.c */,
 			);
 			path = "用递归阶乘";
+			sourceTree = "<group>";
+		};
+		21D4B1D8282043680074D6BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				21D4B1D9282043680074D6BC /* lib测试.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
