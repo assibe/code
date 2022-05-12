@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		216FA6062826B5D400838F13 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 216FA6052826B5D400838F13 /* main.cpp */; };
+		218EF97C282AC82E007E6039 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 218EF97B282AC82E007E6039 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		216FA6002826B5D400838F13 /* CopyFiles */ = {
+		218EF976282AC82E007E6039 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,12 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		216FA6022826B5D400838F13 /* 学习 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "学习"; sourceTree = BUILT_PRODUCTS_DIR; };
-		216FA6052826B5D400838F13 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		218EF978282AC82E007E6039 /* c++学习 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "c++学习"; sourceTree = BUILT_PRODUCTS_DIR; };
+		218EF97B282AC82E007E6039 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; usesTabs = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		216FA5FF2826B5D400838F13 /* Frameworks */ = {
+		218EF975282AC82E007E6039 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,65 +38,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		216FA5F92826B5D400838F13 = {
+		218EF96F282AC82E007E6039 = {
 			isa = PBXGroup;
 			children = (
-				216FA6042826B5D400838F13 /* 学习 */,
-				216FA6032826B5D400838F13 /* Products */,
+				218EF97A282AC82E007E6039 /* c++学习 */,
+				218EF979282AC82E007E6039 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		216FA6032826B5D400838F13 /* Products */ = {
+		218EF979282AC82E007E6039 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				216FA6022826B5D400838F13 /* 学习 */,
+				218EF978282AC82E007E6039 /* c++学习 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		216FA6042826B5D400838F13 /* 学习 */ = {
+		218EF97A282AC82E007E6039 /* c++学习 */ = {
 			isa = PBXGroup;
 			children = (
-				216FA6052826B5D400838F13 /* main.cpp */,
+				218EF97B282AC82E007E6039 /* main.cpp */,
 			);
-			path = "学习";
+			path = "c++学习";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		216FA6012826B5D400838F13 /* 学习 */ = {
+		218EF977282AC82E007E6039 /* c++学习 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 216FA6092826B5D400838F13 /* Build configuration list for PBXNativeTarget "学习" */;
+			buildConfigurationList = 218EF97F282AC82E007E6039 /* Build configuration list for PBXNativeTarget "c++学习" */;
 			buildPhases = (
-				216FA5FE2826B5D400838F13 /* Sources */,
-				216FA5FF2826B5D400838F13 /* Frameworks */,
-				216FA6002826B5D400838F13 /* CopyFiles */,
+				218EF974282AC82E007E6039 /* Sources */,
+				218EF975282AC82E007E6039 /* Frameworks */,
+				218EF976282AC82E007E6039 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "学习";
-			productName = "学习";
-			productReference = 216FA6022826B5D400838F13 /* 学习 */;
+			name = "c++学习";
+			productName = "c++学习";
+			productReference = 218EF978282AC82E007E6039 /* c++学习 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		216FA5FA2826B5D400838F13 /* Project object */ = {
+		218EF970282AC82E007E6039 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
-					216FA6012826B5D400838F13 = {
+					218EF977282AC82E007E6039 = {
 						CreatedOnToolsVersion = 13.3.1;
 					};
 				};
 			};
-			buildConfigurationList = 216FA5FD2826B5D400838F13 /* Build configuration list for PBXProject "学习" */;
+			buildConfigurationList = 218EF973282AC82E007E6039 /* Build configuration list for PBXProject "c++学习" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -104,29 +104,29 @@
 				en,
 				Base,
 			);
-			mainGroup = 216FA5F92826B5D400838F13;
-			productRefGroup = 216FA6032826B5D400838F13 /* Products */;
+			mainGroup = 218EF96F282AC82E007E6039;
+			productRefGroup = 218EF979282AC82E007E6039 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				216FA6012826B5D400838F13 /* 学习 */,
+				218EF977282AC82E007E6039 /* c++学习 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		216FA5FE2826B5D400838F13 /* Sources */ = {
+		218EF974282AC82E007E6039 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				216FA6062826B5D400838F13 /* main.cpp in Sources */,
+				218EF97C282AC82E007E6039 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		216FA6072826B5D400838F13 /* Debug */ = {
+		218EF97D282AC82E007E6039 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -184,7 +184,7 @@
 			};
 			name = Debug;
 		};
-		216FA6082826B5D400838F13 /* Release */ = {
+		218EF97E282AC82E007E6039 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -235,7 +235,7 @@
 			};
 			name = Release;
 		};
-		216FA60A2826B5D400838F13 /* Debug */ = {
+		218EF980282AC82E007E6039 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -243,7 +243,7 @@
 			};
 			name = Debug;
 		};
-		216FA60B2826B5D400838F13 /* Release */ = {
+		218EF981282AC82E007E6039 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -254,25 +254,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		216FA5FD2826B5D400838F13 /* Build configuration list for PBXProject "学习" */ = {
+		218EF973282AC82E007E6039 /* Build configuration list for PBXProject "c++学习" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				216FA6072826B5D400838F13 /* Debug */,
-				216FA6082826B5D400838F13 /* Release */,
+				218EF97D282AC82E007E6039 /* Debug */,
+				218EF97E282AC82E007E6039 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		216FA6092826B5D400838F13 /* Build configuration list for PBXNativeTarget "学习" */ = {
+		218EF97F282AC82E007E6039 /* Build configuration list for PBXNativeTarget "c++学习" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				216FA60A2826B5D400838F13 /* Debug */,
-				216FA60B2826B5D400838F13 /* Release */,
+				218EF980282AC82E007E6039 /* Debug */,
+				218EF981282AC82E007E6039 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 216FA5FA2826B5D400838F13 /* Project object */;
+	rootObject = 218EF970282AC82E007E6039 /* Project object */;
 }
