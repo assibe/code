@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>EB77A0AD-F3B8-4A31-976D-B6C345FF262C</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>EB77A0AD-F3B8-4A31-976D-B6C345FF262C.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>c++的学习 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>c++的学习</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run c++的学习</string>
+			<key>timeStartedRecording</key>
+			<real>674067433.57451999</real>
+			<key>timeStoppedRecording</key>
+			<real>674067486.01191902</real>
+			<key>title</key>
+			<string>Run c++的学习</string>
+			<key>uniqueIdentifier</key>
+			<string>EB77A0AD-F3B8-4A31-976D-B6C345FF262C</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

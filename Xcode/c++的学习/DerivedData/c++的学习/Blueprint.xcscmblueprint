@@ -1,0 +1,23 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "514522D50EED111B4F24E061B97053CCD9037281",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "514522D50EED111B4F24E061B97053CCD9037281" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "8497FE8C-FF1A-4881-8BE2-F737E31BD908",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "514522D50EED111B4F24E061B97053CCD9037281" : "code\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "c++的学习",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Xcode\/c++的学习\/c++的学习.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git@github.com:assibe\/code.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "514522D50EED111B4F24E061B97053CCD9037281"
+    }
+  ]
+}
