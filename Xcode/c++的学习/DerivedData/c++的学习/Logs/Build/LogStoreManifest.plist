@@ -6,40 +6,6 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>4481D8D7-1851-4868-ABA6-8291A2CA3696</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>4481D8D7-1851-4868-ABA6-8291A2CA3696.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>c++的学习 project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>c++的学习</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build c++的学习</string>
-			<key>timeStartedRecording</key>
-			<real>674067420.35164595</real>
-			<key>timeStoppedRecording</key>
-			<real>674067420.64916396</real>
-			<key>title</key>
-			<string>Build c++的学习</string>
-			<key>uniqueIdentifier</key>
-			<string>4481D8D7-1851-4868-ABA6-8291A2CA3696</string>
-		</dict>
 		<key>59D590F1-9E6E-4272-AE2E-FA77CCDA4CDA</key>
 		<dict>
 			<key>className</key>
@@ -73,40 +39,6 @@
 			<string>Build c++的学习</string>
 			<key>uniqueIdentifier</key>
 			<string>59D590F1-9E6E-4272-AE2E-FA77CCDA4CDA</string>
-		</dict>
-		<key>6D1A8C0E-6BB8-4FE8-AC29-73E14185C060</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>6D1A8C0E-6BB8-4FE8-AC29-73E14185C060.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>c++的学习 project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>c++的学习</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build c++的学习</string>
-			<key>timeStartedRecording</key>
-			<real>674067414.572047</real>
-			<key>timeStoppedRecording</key>
-			<real>674067415.71517897</real>
-			<key>title</key>
-			<string>Build c++的学习</string>
-			<key>uniqueIdentifier</key>
-			<string>6D1A8C0E-6BB8-4FE8-AC29-73E14185C060</string>
 		</dict>
 	</dict>
 </dict>

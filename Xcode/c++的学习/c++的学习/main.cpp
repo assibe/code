@@ -7,6 +7,13 @@
 
 #include <iostream>
 
+class N1{
+    int _n;
+    int _c;
+private:
+    
+}
+
 int main(int argc, const char * argv[]) {
     // insert code here...
     std::cout << "Hello, World!\n";
