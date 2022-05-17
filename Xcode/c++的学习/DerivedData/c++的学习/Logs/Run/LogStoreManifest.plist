@@ -6,6 +6,584 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
+		<key>2DD703D6-0263-4AD7-ACC3-C6A8F3A338DF</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>2DD703D6-0263-4AD7-ACC3-C6A8F3A338DF.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>c++的学习 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>c++的学习</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run c++的学习</string>
+			<key>timeStartedRecording</key>
+			<real>674468232.72781897</real>
+			<key>timeStoppedRecording</key>
+			<real>674468267.87484598</real>
+			<key>title</key>
+			<string>Run c++的学习</string>
+			<key>uniqueIdentifier</key>
+			<string>2DD703D6-0263-4AD7-ACC3-C6A8F3A338DF</string>
+		</dict>
+		<key>3610AF1B-645F-4546-B110-5EF08F31105A</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>3610AF1B-645F-4546-B110-5EF08F31105A.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>c++的学习 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>c++的学习</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run c++的学习</string>
+			<key>timeStartedRecording</key>
+			<real>674468805.77952898</real>
+			<key>timeStoppedRecording</key>
+			<real>674468806.73205805</real>
+			<key>title</key>
+			<string>Run c++的学习</string>
+			<key>uniqueIdentifier</key>
+			<string>3610AF1B-645F-4546-B110-5EF08F31105A</string>
+		</dict>
+		<key>69C0EA68-E86D-407A-A493-C0F459D2B0EE</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>69C0EA68-E86D-407A-A493-C0F459D2B0EE.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>c++的学习 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>c++的学习</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run c++的学习</string>
+			<key>timeStartedRecording</key>
+			<real>674468840.376876</real>
+			<key>timeStoppedRecording</key>
+			<real>674468841.31584501</real>
+			<key>title</key>
+			<string>Run c++的学习</string>
+			<key>uniqueIdentifier</key>
+			<string>69C0EA68-E86D-407A-A493-C0F459D2B0EE</string>
+		</dict>
+		<key>7462F50D-F0B3-47C8-8A31-C9515C26D71A</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>7462F50D-F0B3-47C8-8A31-C9515C26D71A.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>c++的学习 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>c++的学习</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run c++的学习</string>
+			<key>timeStartedRecording</key>
+			<real>674479182.52330995</real>
+			<key>timeStoppedRecording</key>
+			<real>674479214.88198805</real>
+			<key>title</key>
+			<string>Run c++的学习</string>
+			<key>uniqueIdentifier</key>
+			<string>7462F50D-F0B3-47C8-8A31-C9515C26D71A</string>
+		</dict>
+		<key>7A4A0A74-15A7-49AE-A47C-69CB9F34BF6A</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>7A4A0A74-15A7-49AE-A47C-69CB9F34BF6A.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>c++的学习 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>c++的学习</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run c++的学习</string>
+			<key>timeStartedRecording</key>
+			<real>674468833.59695399</real>
+			<key>timeStoppedRecording</key>
+			<real>674468837.42571294</real>
+			<key>title</key>
+			<string>Run c++的学习</string>
+			<key>uniqueIdentifier</key>
+			<string>7A4A0A74-15A7-49AE-A47C-69CB9F34BF6A</string>
+		</dict>
+		<key>81F5B3E8-E604-4887-BD3C-AC27AC36395B</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>81F5B3E8-E604-4887-BD3C-AC27AC36395B.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>c++的学习 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>c++的学习</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run c++的学习</string>
+			<key>timeStartedRecording</key>
+			<real>674485886.83897102</real>
+			<key>timeStoppedRecording</key>
+			<real>674485890.17733598</real>
+			<key>title</key>
+			<string>Run c++的学习</string>
+			<key>uniqueIdentifier</key>
+			<string>81F5B3E8-E604-4887-BD3C-AC27AC36395B</string>
+		</dict>
+		<key>8D5CC07E-766F-47B9-A981-08C474A9F6B3</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>8D5CC07E-766F-47B9-A981-08C474A9F6B3.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>c++的学习 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>c++的学习</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run c++的学习</string>
+			<key>timeStartedRecording</key>
+			<real>674486683.94070804</real>
+			<key>timeStoppedRecording</key>
+			<real>674486689.86506104</real>
+			<key>title</key>
+			<string>Run c++的学习</string>
+			<key>uniqueIdentifier</key>
+			<string>8D5CC07E-766F-47B9-A981-08C474A9F6B3</string>
+		</dict>
+		<key>92389180-7117-4E95-8B7C-4586EBBC7C7B</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>92389180-7117-4E95-8B7C-4586EBBC7C7B.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>c++的学习 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>c++的学习</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run c++的学习</string>
+			<key>timeStartedRecording</key>
+			<real>674487009.947016</real>
+			<key>timeStoppedRecording</key>
+			<real>674487013.35912895</real>
+			<key>title</key>
+			<string>Run c++的学习</string>
+			<key>uniqueIdentifier</key>
+			<string>92389180-7117-4E95-8B7C-4586EBBC7C7B</string>
+		</dict>
+		<key>957CDEBD-B221-4C37-9E1E-48F89B14E3B9</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>957CDEBD-B221-4C37-9E1E-48F89B14E3B9.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>c++的学习 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>c++的学习</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run c++的学习</string>
+			<key>timeStartedRecording</key>
+			<real>674486181.78481603</real>
+			<key>timeStoppedRecording</key>
+			<real>674486183.24472404</real>
+			<key>title</key>
+			<string>Run c++的学习</string>
+			<key>uniqueIdentifier</key>
+			<string>957CDEBD-B221-4C37-9E1E-48F89B14E3B9</string>
+		</dict>
+		<key>979A28A0-5E8D-4F67-9E6C-D8D86451AB4D</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>979A28A0-5E8D-4F67-9E6C-D8D86451AB4D.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>c++的学习 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>c++的学习</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run c++的学习</string>
+			<key>timeStartedRecording</key>
+			<real>674486746.65292001</real>
+			<key>timeStoppedRecording</key>
+			<real>674486751.32388198</real>
+			<key>title</key>
+			<string>Run c++的学习</string>
+			<key>uniqueIdentifier</key>
+			<string>979A28A0-5E8D-4F67-9E6C-D8D86451AB4D</string>
+		</dict>
+		<key>C1936611-51F3-4647-8A74-CFABCFE4E037</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>C1936611-51F3-4647-8A74-CFABCFE4E037.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>c++的学习 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>c++的学习</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run c++的学习</string>
+			<key>timeStartedRecording</key>
+			<real>674468449.36726904</real>
+			<key>timeStoppedRecording</key>
+			<real>674468450.29757202</real>
+			<key>title</key>
+			<string>Run c++的学习</string>
+			<key>uniqueIdentifier</key>
+			<string>C1936611-51F3-4647-8A74-CFABCFE4E037</string>
+		</dict>
+		<key>C4628C35-BFE6-4ECE-B379-200521005E54</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>C4628C35-BFE6-4ECE-B379-200521005E54.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>c++的学习 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>c++的学习</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run c++的学习</string>
+			<key>timeStartedRecording</key>
+			<real>674479215.31649995</real>
+			<key>timeStoppedRecording</key>
+			<real>674485881.72178698</real>
+			<key>title</key>
+			<string>Run c++的学习</string>
+			<key>uniqueIdentifier</key>
+			<string>C4628C35-BFE6-4ECE-B379-200521005E54</string>
+		</dict>
+		<key>CBB903F7-EFB2-44F8-84E6-5812E387B16A</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>CBB903F7-EFB2-44F8-84E6-5812E387B16A.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>c++的学习 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>c++的学习</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run c++的学习</string>
+			<key>timeStartedRecording</key>
+			<real>674468290.88112795</real>
+			<key>timeStoppedRecording</key>
+			<real>674468295.17261004</real>
+			<key>title</key>
+			<string>Run c++的学习</string>
+			<key>uniqueIdentifier</key>
+			<string>CBB903F7-EFB2-44F8-84E6-5812E387B16A</string>
+		</dict>
+		<key>CDA569CF-799B-47AA-802B-0FAD45154D9F</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>CDA569CF-799B-47AA-802B-0FAD45154D9F.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>c++的学习 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>c++的学习</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run c++的学习</string>
+			<key>timeStartedRecording</key>
+			<real>674468670.47694302</real>
+			<key>timeStoppedRecording</key>
+			<real>674468710.66907597</real>
+			<key>title</key>
+			<string>Run c++的学习</string>
+			<key>uniqueIdentifier</key>
+			<string>CDA569CF-799B-47AA-802B-0FAD45154D9F</string>
+		</dict>
+		<key>D87CD4AF-7F2B-4869-9BF3-8612D8535D7D</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>D87CD4AF-7F2B-4869-9BF3-8612D8535D7D.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>c++的学习 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>c++的学习</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run c++的学习</string>
+			<key>timeStartedRecording</key>
+			<real>674468443.37369597</real>
+			<key>timeStoppedRecording</key>
+			<real>674468447.08617103</real>
+			<key>title</key>
+			<string>Run c++的学习</string>
+			<key>uniqueIdentifier</key>
+			<string>D87CD4AF-7F2B-4869-9BF3-8612D8535D7D</string>
+		</dict>
+		<key>DA8C25A8-BAED-4C3F-BFB9-D839982B6FBE</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>DA8C25A8-BAED-4C3F-BFB9-D839982B6FBE.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>c++的学习 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>c++的学习</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run c++的学习</string>
+			<key>timeStartedRecording</key>
+			<real>674468659.12197697</real>
+			<key>timeStoppedRecording</key>
+			<real>674468664.27012098</real>
+			<key>title</key>
+			<string>Run c++的学习</string>
+			<key>uniqueIdentifier</key>
+			<string>DA8C25A8-BAED-4C3F-BFB9-D839982B6FBE</string>
+		</dict>
+		<key>E02A1A1A-5C04-4029-9C1D-DCDE487FA11B</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>E02A1A1A-5C04-4029-9C1D-DCDE487FA11B.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>c++的学习 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>c++的学习</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run c++的学习</string>
+			<key>timeStartedRecording</key>
+			<real>674468731.43635094</real>
+			<key>timeStoppedRecording</key>
+			<real>674468735.49835706</real>
+			<key>title</key>
+			<string>Run c++的学习</string>
+			<key>uniqueIdentifier</key>
+			<string>E02A1A1A-5C04-4029-9C1D-DCDE487FA11B</string>
+		</dict>
 		<key>EB77A0AD-F3B8-4A31-976D-B6C345FF262C</key>
 		<dict>
 			<key>className</key>
@@ -39,6 +617,74 @@
 			<string>Run c++的学习</string>
 			<key>uniqueIdentifier</key>
 			<string>EB77A0AD-F3B8-4A31-976D-B6C345FF262C</string>
+		</dict>
+		<key>EF653504-3100-472C-BC7E-AFD3922182C9</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>EF653504-3100-472C-BC7E-AFD3922182C9.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>c++的学习 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>c++的学习</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run c++的学习</string>
+			<key>timeStartedRecording</key>
+			<real>674486995.179299</real>
+			<key>timeStoppedRecording</key>
+			<real>674486999.06928504</real>
+			<key>title</key>
+			<string>Run c++的学习</string>
+			<key>uniqueIdentifier</key>
+			<string>EF653504-3100-472C-BC7E-AFD3922182C9</string>
+		</dict>
+		<key>FE055D96-1DFB-4423-9340-F1EF055B55E8</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>FE055D96-1DFB-4423-9340-F1EF055B55E8.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>c++的学习 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>c++的学习</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run c++的学习</string>
+			<key>timeStartedRecording</key>
+			<real>674468742.513901</real>
+			<key>timeStoppedRecording</key>
+			<real>674468758.08794606</real>
+			<key>title</key>
+			<string>Run c++的学习</string>
+			<key>uniqueIdentifier</key>
+			<string>FE055D96-1DFB-4423-9340-F1EF055B55E8</string>
 		</dict>
 	</dict>
 </dict>

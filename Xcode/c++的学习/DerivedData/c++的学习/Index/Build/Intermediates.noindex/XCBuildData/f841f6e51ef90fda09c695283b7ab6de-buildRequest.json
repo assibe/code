@@ -1,0 +1,61 @@
+{
+  "_buildCommand2" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : true,
+    "targets" : null
+  },
+  "buildCommand" : "build",
+  "configuredTargets" : [
+    {
+      "guid" : "743a45b75be1ee9714086db921bc4ddefc8310fcb0b4ee91ccb9a2b1c30e7c7c"
+    }
+  ],
+  "containerPath" : "/Users/zhourenxi/Desktop/code/Xcode/c++的学习/c++的学习.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "indexbuild",
+    "activeArchitecture" : "arm64e",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "macosx",
+      "sdk" : "macosx12.3",
+      "sdkVariant" : "macos",
+      "supportedArchitectures" : [
+        "arm64e",
+        "arm64",
+        "x86_64"
+      ],
+      "targetArchitecture" : "arm64e"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/zhourenxi/Desktop/code/Xcode/c++的学习/DerivedData/c++的学习/Index/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/zhourenxi/Desktop/code/Xcode/c++的学习/DerivedData/c++的学习/Index/Build/Products",
+      "derivedDataPath" : "/Users/zhourenxi/Desktop/code/Xcode/c++的学习/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/zhourenxi/Desktop/code/Xcode/c++的学习/DerivedData/c++的学习/Index/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/zhourenxi/Desktop/code/Xcode/c++的学习/DerivedData/c++的学习/Index/PrecompiledHeaders",
+      "pchPath" : "/Users/zhourenxi/Desktop/code/Xcode/c++的学习/DerivedData/c++的学习/Index/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO",
+          "INDEX_ARENA_INFO_REGULAR_BUILD_PRODUCTS_DIR" : "/Users/zhourenxi/Desktop/code/Xcode/c++的学习/DerivedData/c++的学习/Build/Products",
+          "ONLY_ACTIVE_ARCH" : "YES"
+        }
+      }
+    }
+  },
+  "qos" : "default",
+  "schemeCommand" : "launch",
+  "schemeCommand2" : "launch",
+  "shouldCollectMetrics" : false,
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

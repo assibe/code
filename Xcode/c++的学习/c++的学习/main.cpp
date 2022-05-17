@@ -7,16 +7,37 @@
 
 #include <iostream>
 
-class N1{
-    int _n;
-    int _c;
-private:
+class Date{
+public:
+    Date(int year = 1,int mothe = 1,int day = 1){
+        _day = day;
+        _mothe = mothe;
+        _year = year;
+    }
     
-}
+private:
+    int _mothe;
+    int _year;
+    int _day;
+};
 
+struct Date1{
+    int _mothe;
+    int _year;
+    int _day;
+public:
+    Date1(int year = 1,int mothe = 1,int day = 1){
+        _day = day;
+        _mothe = mothe;
+        _year = year;
+    }
+};
+
+using namespace std;
 int main(int argc, const char * argv[]) {
     // insert code here...
-    std::cout << "Hello, World!\n";
-    int *n = nullptr;
+    Date1 i;
+    
+    printf("%d\n",i._year);
     return 0;
 }
