@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		219AB7BC2835EBF600191FD5 /* Date.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 219AB7BA2835EBF600191FD5 /* Date.cpp */; };
 		21F0E9242833F83A00CC732B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21F0E9232833F83A00CC732B /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		219AB7BA2835EBF600191FD5 /* Date.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Date.cpp; sourceTree = "<group>"; };
+		219AB7BB2835EBF600191FD5 /* Date.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Date.hpp; sourceTree = "<group>"; };
 		21F0E9202833F83A00CC732B /* 日期的实现 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "日期的实现"; sourceTree = BUILT_PRODUCTS_DIR; };
 		21F0E9232833F83A00CC732B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				21F0E9232833F83A00CC732B /* main.cpp */,
+				219AB7BA2835EBF600191FD5 /* Date.cpp */,
+				219AB7BB2835EBF600191FD5 /* Date.hpp */,
 			);
 			path = "日期的实现";
 			sourceTree = "<group>";
@@ -120,6 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				21F0E9242833F83A00CC732B /* main.cpp in Sources */,
+				219AB7BC2835EBF600191FD5 /* Date.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
