@@ -21,12 +21,14 @@ class Date{
     
 public:
     
+    int GetMonthDay(int year, int month);
+    
     bool operator< (const Date &d);
     bool operator> (const Date &d);
     bool operator== (const Date &d);
     bool operator!= (const Date&d);
     Date operator+(int day);
-    Date operator+=(int day);
+    Date &operator+=(int day);
     
 private:
     int _year;
