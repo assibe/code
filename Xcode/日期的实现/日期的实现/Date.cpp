@@ -7,4 +7,8 @@
 
 #include "Date.hpp"
 
-
+Date:: Date(const Date& d){
+    _year = d._year;
+    _month = d._month;
+    _day = d._day;
+};
