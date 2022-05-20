@@ -7,8 +7,42 @@
 
 #include "Date.hpp"
 
-Date:: Date(const Date& d){
-    _year = d._year;
-    _month = d._month;
-    _day = d._day;
+
+
+bool Date :: operator < (const Date &d){
+    
+    if (_year < d._year|| _mothe < d._mothe||_day < d._day) {
+        return true;
+    }
+    return false;
 };
+
+bool Date::operator>(const Date &d){
+    
+    if (_year > d._year|| _mothe > d._mothe||_day > d._day) {
+        return true;
+    }
+    return false;
+}
+
+bool Date::operator==(const Date &d){
+    
+    return _year == d._year && _mothe == d._mothe && _day == d._day;
+}
+
+bool Date::operator!=(const Date &d){
+    
+    if (_year == d._year && _mothe == d._mothe && _day == d._day) {
+        return false;
+    }
+    return true;
+}
+
+Date Date::operator+(int day){
+    
+    Date ret(*this);//赋值
+    ret += day;
+    
+    return ret;
+}
+

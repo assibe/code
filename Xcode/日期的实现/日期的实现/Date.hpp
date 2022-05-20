@@ -17,7 +17,23 @@ using std::cout;
 
 #endif /* Date_hpp */
 
-
+class Date{
+    
+public:
+    
+    bool operator< (const Date &d);
+    bool operator> (const Date &d);
+    bool operator== (const Date &d);
+    bool operator!= (const Date&d);
+    Date operator+(int day);
+    Date operator+=(int day);
+    
+private:
+    int _year;
+    int _mothe;
+    int _day;
+    
+};
 
 
 
