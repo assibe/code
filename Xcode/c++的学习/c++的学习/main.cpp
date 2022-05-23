@@ -33,6 +33,23 @@ public:
     }
 };
 
+
+class N{
+public:
+    Date(int a)
+    ;b(a)
+    ;c = 10;
+    {};
+    
+    
+private:
+    const int c;
+    int &b;
+    
+}
+
+
+
 using namespace std;
 int main(int argc, const char * argv[]) {
     // insert code here...
