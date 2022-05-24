@@ -34,19 +34,21 @@ public:
 };
 
 
-class N{
+class N1{
 public:
     Date(int a)
-    ;b(a)
-    ;c = 10;
-    {};
+    ;c = 20
+    , b =20
+    {
+        
+    };
     
     
 private:
     const int c;
     int &b;
     
-}
+};
 
 
 
