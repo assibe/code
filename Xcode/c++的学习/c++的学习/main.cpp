@@ -7,6 +7,15 @@
 
 #include <iostream>
 
+template <class T>
+
+void Swap(T &right ,T &left){
+    int tmp = right;
+    right = left;
+    left = tmp;
+    
+}
+
 class Date{
 public:
     Date(int year = 1,int mothe = 1,int day = 1){
@@ -18,45 +27,14 @@ public:
 private:
     int _mothe;
     int _year;
-    int _day;
+    int _day = 10;
 };
 
-struct Date1{
-    int _mothe;
-    int _year;
-    int _day;
-public:
-    Date1(int year = 1,int mothe = 1,int day = 1){
-        _day = day;
-        _mothe = mothe;
-        _year = year;
-    }
-};
-
-
-class N1{
-public:
-    Date(int a)
-    ;c = 20
-    , b =20
-    {
-        
-    };
-    
-    
-private:
-    const int c;
-    int &b;
-    
-};
 
 
 
 using namespace std;
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    Date1 i;
-    
-    printf("%d\n",i._year);
+    // insert code here..
     return 0;
 }
