@@ -23,7 +23,10 @@ public:
         _mothe = mothe;
         _year = year;
     }
-    
+    class m1{
+        int c;
+        
+    }
 private:
     int _mothe;
     int _year;
@@ -36,5 +39,4 @@ private:
 using namespace std;
 int main(int argc, const char * argv[]) {
     // insert code here..
-    return 0;
-}
+    return 0
