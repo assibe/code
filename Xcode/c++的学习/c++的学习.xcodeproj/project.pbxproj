@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		210AD53C2844E59000116B65 /* 尝试.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 210AD53A2844E59000116B65 /* 尝试.cpp */; };
 		217E56B6282D64180032DAF1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 217E56B5282D64180032DAF1 /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		210AD53A2844E59000116B65 /* 尝试.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "尝试.cpp"; sourceTree = "<group>"; };
+		210AD53B2844E59000116B65 /* 尝试.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "尝试.hpp"; sourceTree = "<group>"; };
 		217E56B2282D64180032DAF1 /* c++的学习 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "c++的学习"; sourceTree = BUILT_PRODUCTS_DIR; };
 		217E56B5282D64180032DAF1 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -41,6 +44,8 @@
 		217E56A9282D64180032DAF1 = {
 			isa = PBXGroup;
 			children = (
+				210AD53A2844E59000116B65 /* 尝试.cpp */,
+				210AD53B2844E59000116B65 /* 尝试.hpp */,
 				217E56B4282D64180032DAF1 /* c++的学习 */,
 				217E56B3282D64180032DAF1 /* Products */,
 			);
@@ -120,6 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				217E56B6282D64180032DAF1 /* main.cpp in Sources */,
+				210AD53C2844E59000116B65 /* 尝试.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
