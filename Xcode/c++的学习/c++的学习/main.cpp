@@ -7,6 +7,7 @@
 
 #include <iostream>
 #include <string>
+#include <stdio.h>
 
 template <class T>
 
@@ -27,17 +28,23 @@ public:
     class m1{
         int c;
         
-    }
+    };
 private:
     int _mothe;
     int _year;
     int _day = 10;
 };
 
-
+template <class T>
+int N1(T a) {
+    return a;
+}
 
 
 using namespace std;
 int main(int argc, const char * argv[]) {
     // insert code here..
-    return 0
+    cout << N1(32);
+    
+    return 0;
+}
