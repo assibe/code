@@ -8,7 +8,6 @@
 #include <iostream>
 #include <string>
 #include <stdio.h>
-
 template <class T>
 
 void Swap(T &right ,T &left){
@@ -17,6 +16,13 @@ void Swap(T &right ,T &left){
     left = tmp;
     
 }
+
+class N1{
+private:
+public:
+}
+
+
 
 class Date{
 public:
@@ -45,6 +51,9 @@ using namespace std;
 int main(int argc, const char * argv[]) {
     // insert code here..
     cout << N1(32);
+    class Ni{
+        
+    }
     
     return 0;
 }
