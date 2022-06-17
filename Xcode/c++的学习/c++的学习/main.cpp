@@ -19,41 +19,24 @@ void Swap(T &right ,T &left){
 
 class N1{
 private:
-public:
-}
-
-
-
-class Date{
-public:
-    Date(int year = 1,int mothe = 1,int day = 1){
-        _day = day;
-        _mothe = mothe;
-        _year = year;
-    }
-    class m1{
-        int c;
-        
-    };
-private:
-    int _mothe;
-    int _year;
-    int _day = 10;
 };
+
+
 
 template <class T>
 int N1(T a) {
     return a;
 }
 
+template <class T>
+T Add(const T a1,const T a2) {
+    return a1 + a2;
+}
+
 
 using namespace std;
 int main(int argc, const char * argv[]) {
     // insert code here..
-    cout << N1(32);
-    class Ni{
-        
-    }
     
     return 0;
 }
