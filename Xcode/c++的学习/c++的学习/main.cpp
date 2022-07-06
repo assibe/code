@@ -8,35 +8,34 @@
 #include <iostream>
 #include <string>
 #include <stdio.h>
-template <class T>
+#include <string>
 
-void Swap(T &right ,T &left){
-    int tmp = right;
-    right = left;
-    left = tmp;
-    
-}
 
-class N1{
-private:
+class Solution
+{
+public:
+    int lengthOfLongestSubstring(std::string s)
+    {
+        //s[start,end) 前面包含 后面不包含
+        int start(0), end(0), length(0), result(0);
+        int sSize = int(s.size());
+        while (end < sSize)
+        {
+            char tmpChar = s[end];
+            for (int index = start; index < end; index++)
+            {
+                if (tmpChar == s[index])
+                {
+                    start = index + 1;
+                    length = end - start;
+                    break;
+                }
+            }
+
+            end++;
+            length++;
+            result = std::max(result, length);
+        }
+        return result;
+    }
 };
-
-
-
-template <class T>
-int N1(T a) {
-    return a;
-}
-
-template <class T>
-T Add(const T a1,const T a2) {
-    return a1 + a2;
-}
-
-
-using namespace std;
-int main(int argc, const char * argv[]) {
-    // insert code here..
-    
-    return 0;fs
-}
