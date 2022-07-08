@@ -8,6 +8,12 @@
 #include <iostream>
 #include <string>
 
+
+std::string& operatr=(const std::string & s){
+    
+    strcpy(<#char *__dst#>, <#const char *__src#>)
+}
+
 using std::cout;
 using std::endl;
 int main(int argc, const char * argv[]) {
