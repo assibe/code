@@ -8,12 +8,6 @@
 #include <iostream>
 #include <string>
 
-
-std::string& operatr=(const std::string & s){
-    
-    strcpy(<#char *__dst#>, <#const char *__src#>)
-}
-
 using std::cout;
 using std::endl;
 int main(int argc, const char * argv[]) {
@@ -21,13 +15,13 @@ int main(int argc, const char * argv[]) {
     std::cout << "Hello, World!\n";
     std::string s("ffapf");
     
-    std::cout << s[3];
+//    std::cout << s[3];
+    std::cout << s.c_str() << endl;
     s += "faf";
-    cout << s << std ::endl;
-    s.insert(3, "ds");
-    cout << s << endl;
-    s.erase(1000);
-    cout << s;
+//    cout << s << std ::endl;
+//    s.insert(3, "ds");
+//    cout << s << endl;
+//    cout << s;
     return 0;
 }
 
