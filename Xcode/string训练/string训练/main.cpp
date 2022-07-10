@@ -18,6 +18,7 @@ int main(int argc, const char * argv[]) {
 //    std::cout << s[3];
     std::cout << s.c_str() << endl;
     s += "faf";
+    std:: cout << s.size() << endl;
 //    cout << s << std ::endl;
 //    s.insert(3, "ds");
 //    cout << s << endl;
