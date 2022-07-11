@@ -10,19 +10,23 @@
 
 using std::cout;
 using std::endl;
+
 int main(int argc, const char * argv[]) {
     // insert code here...
     std::cout << "Hello, World!\n";
     std::string s("ffapf");
     
-//    std::cout << s[3];
+    std::cout << s[3];
     std::cout << s.c_str() << endl;
     s += "faf";
     std:: cout << s.size() << endl;
-//    cout << s << std ::endl;
-//    s.insert(3, "ds");
-//    cout << s << endl;
-//    cout << s;
+    
+    cout   << std::string::npos << endl;
+
+    cout << s << std ::endl;
+    s.insert(3, "ds");
+    cout << s << endl;
+    cout << s;
     return 0;
 }
 
