@@ -7,6 +7,7 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
 
 using std::cout;
 using std::endl;
@@ -27,6 +28,8 @@ int main(int argc, const char * argv[]) {
     s.insert(3, "ds");
     cout << s << endl;
     cout << s;
+    
+    
     return 0;
 }
 
