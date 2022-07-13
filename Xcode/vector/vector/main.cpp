@@ -13,7 +13,11 @@ using std::vector;
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    std::cout << "Hello, World!\n";
+    
     vector<int> s;
+    s.push_back(32);
+    
+    
+    std::cout << &s << std::endl;
     return 0;
 }
