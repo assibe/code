@@ -26,8 +26,10 @@ public:
         int n = 0;
         while (n <= str.size()) {
             
-            if (<#condition#>) {
-                <#statements#>
+            if () {
+                fasfaf
+                faf
+                __sfeof(<#p#>)
             }
         }
         
