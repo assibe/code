@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		21329D0F2875394A001202E5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21329D0E2875394A001202E5 /* main.cpp */; };
+		21D47C242896F6F8007AA27A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21D47C232896F6F8007AA27A /* main.cpp */; };
+		21EA04EE2896FD9400D7A86D /* string.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21EA04EC2896FD9400D7A86D /* string.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		21329D092875394A001202E5 /* CopyFiles */ = {
+		21D47C1E2896F6F8007AA27A /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,12 +24,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		21329D0B2875394A001202E5 /* string训练 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "string训练"; sourceTree = BUILT_PRODUCTS_DIR; };
-		21329D0E2875394A001202E5 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		21D47C202896F6F8007AA27A /* string类的模拟实现 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "string类的模拟实现"; sourceTree = BUILT_PRODUCTS_DIR; };
+		21D47C232896F6F8007AA27A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		21EA04EC2896FD9400D7A86D /* string.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = string.cpp; sourceTree = "<group>"; };
+		21EA04ED2896FD9400D7A86D /* string.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = string.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		21329D082875394A001202E5 /* Frameworks */ = {
+		21D47C1D2896F6F8007AA27A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,65 +41,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		21329D0228753949001202E5 = {
+		21D47C172896F6F8007AA27A = {
 			isa = PBXGroup;
 			children = (
-				21329D0D2875394A001202E5 /* string训练 */,
-				21329D0C2875394A001202E5 /* Products */,
+				21D47C222896F6F8007AA27A /* string类的模拟实现 */,
+				21D47C212896F6F8007AA27A /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		21329D0C2875394A001202E5 /* Products */ = {
+		21D47C212896F6F8007AA27A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				21329D0B2875394A001202E5 /* string训练 */,
+				21D47C202896F6F8007AA27A /* string类的模拟实现 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		21329D0D2875394A001202E5 /* string训练 */ = {
+		21D47C222896F6F8007AA27A /* string类的模拟实现 */ = {
 			isa = PBXGroup;
 			children = (
-				21329D0E2875394A001202E5 /* main.cpp */,
+				21D47C232896F6F8007AA27A /* main.cpp */,
+				21EA04EC2896FD9400D7A86D /* string.cpp */,
+				21EA04ED2896FD9400D7A86D /* string.hpp */,
 			);
-			path = "string训练";
+			path = "string类的模拟实现";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		21329D0A2875394A001202E5 /* string训练 */ = {
+		21D47C1F2896F6F8007AA27A /* string类的模拟实现 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 21329D122875394A001202E5 /* Build configuration list for PBXNativeTarget "string训练" */;
+			buildConfigurationList = 21D47C272896F6F8007AA27A /* Build configuration list for PBXNativeTarget "string类的模拟实现" */;
 			buildPhases = (
-				21329D072875394A001202E5 /* Sources */,
-				21329D082875394A001202E5 /* Frameworks */,
-				21329D092875394A001202E5 /* CopyFiles */,
+				21D47C1C2896F6F8007AA27A /* Sources */,
+				21D47C1D2896F6F8007AA27A /* Frameworks */,
+				21D47C1E2896F6F8007AA27A /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "string训练";
-			productName = "string训练";
-			productReference = 21329D0B2875394A001202E5 /* string训练 */;
+			name = "string类的模拟实现";
+			productName = "string类的模拟实现";
+			productReference = 21D47C202896F6F8007AA27A /* string类的模拟实现 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		21329D0328753949001202E5 /* Project object */ = {
+		21D47C182896F6F8007AA27A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
-					21329D0A2875394A001202E5 = {
+					21D47C1F2896F6F8007AA27A = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
 				};
 			};
-			buildConfigurationList = 21329D0628753949001202E5 /* Build configuration list for PBXProject "string训练" */;
+			buildConfigurationList = 21D47C1B2896F6F8007AA27A /* Build configuration list for PBXProject "string类的模拟实现" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -104,29 +109,30 @@
 				en,
 				Base,
 			);
-			mainGroup = 21329D0228753949001202E5;
-			productRefGroup = 21329D0C2875394A001202E5 /* Products */;
+			mainGroup = 21D47C172896F6F8007AA27A;
+			productRefGroup = 21D47C212896F6F8007AA27A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				21329D0A2875394A001202E5 /* string训练 */,
+				21D47C1F2896F6F8007AA27A /* string类的模拟实现 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		21329D072875394A001202E5 /* Sources */ = {
+		21D47C1C2896F6F8007AA27A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21329D0F2875394A001202E5 /* main.cpp in Sources */,
+				21EA04EE2896FD9400D7A86D /* string.cpp in Sources */,
+				21D47C242896F6F8007AA27A /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		21329D102875394A001202E5 /* Debug */ = {
+		21D47C252896F6F8007AA27A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -184,7 +190,7 @@
 			};
 			name = Debug;
 		};
-		21329D112875394A001202E5 /* Release */ = {
+		21D47C262896F6F8007AA27A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -235,7 +241,7 @@
 			};
 			name = Release;
 		};
-		21329D132875394A001202E5 /* Debug */ = {
+		21D47C282896F6F8007AA27A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -243,7 +249,7 @@
 			};
 			name = Debug;
 		};
-		21329D142875394A001202E5 /* Release */ = {
+		21D47C292896F6F8007AA27A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -254,25 +260,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		21329D0628753949001202E5 /* Build configuration list for PBXProject "string训练" */ = {
+		21D47C1B2896F6F8007AA27A /* Build configuration list for PBXProject "string类的模拟实现" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				21329D102875394A001202E5 /* Debug */,
-				21329D112875394A001202E5 /* Release */,
+				21D47C252896F6F8007AA27A /* Debug */,
+				21D47C262896F6F8007AA27A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		21329D122875394A001202E5 /* Build configuration list for PBXNativeTarget "string训练" */ = {
+		21D47C272896F6F8007AA27A /* Build configuration list for PBXNativeTarget "string类的模拟实现" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				21329D132875394A001202E5 /* Debug */,
-				21329D142875394A001202E5 /* Release */,
+				21D47C282896F6F8007AA27A /* Debug */,
+				21D47C292896F6F8007AA27A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 21329D0328753949001202E5 /* Project object */;
+	rootObject = 21D47C182896F6F8007AA27A /* Project object */;
 }

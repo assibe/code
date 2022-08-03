@@ -1,6 +1,6 @@
 //
 //  main.cpp
-//  字符串相乘
+//  反转字符串中的单词 III
 //
 //  Created by zhourenxi on 2022/8/1.
 //
@@ -10,12 +10,10 @@
 
 using namespace std;
 
-
 class Solution {
 public:
-    string multiply(string num1, string num2) {
+    string reverseWords(string s) {
         
-        int index = num1 - 0;
         
     }
 };
