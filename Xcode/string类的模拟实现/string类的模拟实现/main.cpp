@@ -6,12 +6,17 @@
 //
 
 #include <iostream>
-
+#include "string.hpp"
 
 using namespace std;
+using namespace zhorenxi;
+
 int main(int argc, const char * argv[]) {
     // insert code here...
-    cout << "Hello, World!\n";
+    
+    zhorenxi::string s1(";foafa");
+    zhorenxi::string s2(s1);
+    cout << s1.c_str() << endl;
     
     return 0;
 }
