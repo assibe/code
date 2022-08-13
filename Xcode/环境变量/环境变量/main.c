@@ -6,9 +6,15 @@
 //
 
 #include <stdio.h>
+#include <unistd.h>
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    printf("Hello, World!\n");
+    while (1) {
+        
+        printf("PID:%d,PPID:%d\n",getpid(),getppid());
+        sleep(1);
+    }
+    
     return 0;
 }
