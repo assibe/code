@@ -7,14 +7,13 @@
 
 #include <stdio.h>
 #include <unistd.h>
+#include <sys/types.h>
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    while (1) {
-        
-        printf("PID:%d,PPID:%d\n",getpid(),getppid());
-        sleep(1);
-    }
-    
+            
+        pid_t id = fork();
+        printf("ID:%d\n",id);
+   
     return 0;
 }
