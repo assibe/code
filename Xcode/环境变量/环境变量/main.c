@@ -11,9 +11,8 @@
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-            
-        pid_t id = fork();
-        printf("ID:%d\n",id);
-   
+    
+    pid_t id = fork();
+    
     return 0;
 }
