@@ -12,7 +12,16 @@
 int main(int argc, const char * argv[]) {
     // insert code here...
     
+    
+    
     pid_t id = fork();
     
+    while (<#condition#>) {
+        <#statements#>
+    }
+    
+    if (<#condition#>) {
+        <#statements#>
+    }
     return 0;
 }
