@@ -6,22 +6,16 @@
 //
 
 #include <stdio.h>
-#include <unistd.h>
-#include <sys/types.h>
+#include <stdlib.h>
+
 
 int main(int argc, const char * argv[]) {
     // insert code here...
     
     
+    char *a = getenv($PATH);
     
-    pid_t id = fork();
     
-    while (<#condition#>) {
-        <#statements#>
-    }
     
-    if (<#condition#>) {
-        <#statements#>
-    }
     return 0;
 }
