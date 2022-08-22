@@ -14,24 +14,30 @@ public:
     int b = 0;
 };
 
-class test1:public test{
-
-public:
-    int m = 0;
-};
-
-class test2:public test{
+class test1{
     
 public:
-    int n = 0;
+    test _test;
 };
 
-
-class test3: virtual  public test2,virtual public test1{
-    
-public:
-    int m = 1;
-};
+//class test1:public test{
+//
+//public:
+//    int m = 0;
+//};
+//
+//class test2:public test{
+//
+//public:
+//    int n = 0;
+//};
+//
+//
+//class test3: virtual  public test2,virtual public test1{
+//
+//public:
+//    int m = 1;
+//};
 
 using namespace std;
 
@@ -39,7 +45,7 @@ int main(int argc, const char * argv[]) {
     // insert code here...
     std::cout << "Hello, World!\n";
     
-    test3 m;
-    cout << m.test2::n << endl;
+    test1 m;
+    cout << m._test.b<< endl;
     return 0;
 }
