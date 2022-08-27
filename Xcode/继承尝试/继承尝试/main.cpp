@@ -47,5 +47,6 @@ int main(int argc, const char * argv[]) {
     
     test1 m;
     cout << m._test.b<< endl;
+    cout << m.test1::c;
     return 0;
 }
