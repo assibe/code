@@ -8,10 +8,16 @@
 #include <iostream>
 #include <unistd.h>
 
+using namespace std;
+
 int main(int argc, char* argv[])
 {
    fork();
     (fork() && fork()) || fork();
    fork();
+    
+    set<int> s1;
+    
+    
     return 0;
 }
