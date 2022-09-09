@@ -18,6 +18,8 @@ int main(int argc, char* argv[])
     
     set<int> s1;
     
+    printf("dfaf");
+    
     
     return 0;
 }
