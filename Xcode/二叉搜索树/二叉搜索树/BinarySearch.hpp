@@ -183,18 +183,43 @@ public:
                 }
                 else{
                     
-                    
-                
+                    Node* minParent = cur;
+                    Node* minRight = cur->_right;
+                    while (minRight->_left) {
+                        
+                        minParent = cur->_left;
+                        minRight = cur->_right;
+                        while (minRight->_left) {
+                            
+                            minParent = minRight;
+                            minRight = minRight->_left;
+                            
+                        }
+                        
+                        swap(minRight->_key, cur->_key);
+                        if (minParent->_left == minRight) {
+                            
+                            minParent ->_left = minRight;
+                            
+                        }
+                        else{
+                            
+                            minParent = minRight->_right;
+                            
+                        }
+                        delete minRight;
+                    }
+                    return true;
                 }
             }
-            }
-        return true;
-    }
+            
+        return false;
+        };
     
     void InOrder(const K& key){
         
         _InOreder(key);
-    }
+    };
     
     
 private:
