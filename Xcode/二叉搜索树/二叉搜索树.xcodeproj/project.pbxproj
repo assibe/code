@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		21280F0B28CCE13900F92ADD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21280F0A28CCE13900F92ADD /* main.cpp */; };
+		21280F1328CCFF4600F92ADD /* BinarySearch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21280F1128CCFF4600F92ADD /* BinarySearch.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		21280F0728CCE13900F92ADD /* 二叉搜索树 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "二叉搜索树"; sourceTree = BUILT_PRODUCTS_DIR; };
 		21280F0A28CCE13900F92ADD /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		21280F1128CCFF4600F92ADD /* BinarySearch.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BinarySearch.cpp; sourceTree = "<group>"; };
+		21280F1228CCFF4600F92ADD /* BinarySearch.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinarySearch.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				21280F0A28CCE13900F92ADD /* main.cpp */,
+				21280F1128CCFF4600F92ADD /* BinarySearch.cpp */,
+				21280F1228CCFF4600F92ADD /* BinarySearch.hpp */,
 			);
 			path = "二叉搜索树";
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21280F1328CCFF4600F92ADD /* BinarySearch.cpp in Sources */,
 				21280F0B28CCE13900F92ADD /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
