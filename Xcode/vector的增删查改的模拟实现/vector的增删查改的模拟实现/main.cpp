@@ -15,6 +15,11 @@ int main(int argc, const char * argv[]) {
     vector::vector<int> v;
     v.reserve(3);
     v.insert(0, 2);
+    v.pop_back(2);
+    cout <<v.size();
+    
+    
+    
     
     return 0;
 }
