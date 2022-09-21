@@ -83,3 +83,52 @@ int main(int argc, const char * argv[]) {
     std::cout << "Hello, World!\n";
     return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+struct SingeNode{
+    
+    size_t data;
+    struct SingeNode *next;
+};
+
+void purge(SingeNode* Node){
+    
+    struct SingeNode* p = Node->next;
+    while (p->next != nullptr) {
+        
+        if (p->data == p->next->data) {
+            struct SingeNode *q;
+            q = p->next;
+            p->next = q->next;
+            delete q;
+            
+        }
+        else{
+            
+            p = p ->next;
+            
+        }
+        
+    }
+}
+
+
