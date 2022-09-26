@@ -14,4 +14,5 @@ int main(int argc, const char * argv[]) {
     n =  2 << (n - 1);
     printf("%d",n);
     return 0;
+    
 }
