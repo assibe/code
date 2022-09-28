@@ -19,11 +19,34 @@ template<class K,class V>
 
 struct AVLTreeNode{
 
-    
+    AVLTreeNode(const pair<K, V>& kv)
+    :_kv(kv),_left(nullptr),_parent(nullptr),_right(nullptr),_bf(0){}
     
 public:
     
+    pair<K, V> _kv;
+    AVLTreeNode<K, V>* _left;
+    AVLTreeNode<K, V>* _right;
+    AVLTreeNode<K, V>* _parent;
     int _bf;
     
     
-}
+};
+
+template<class K,class V>
+
+class AVLTree{
+    
+    typedef AVLTreeNode<K, V> Node;
+public:
+    
+};
+
+
+
+
+
+
+
+
+
