@@ -10,6 +10,8 @@
 
 #include <stdio.h>
 #include <utility>
+#include <queue>
+#include <time.h>
 
 #endif /* AVLTreeNode_hpp */
 
@@ -37,8 +39,22 @@ template<class K,class V>
 
 class AVLTree{
     
-    typedef AVLTreeNode<K, V> Node;
+    typedef AVLTreeNode<K, V>  Node;
 public:
+    
+private:
+    void RotateL(Node* parent){
+        
+        Node* subR = parent->_right;
+        Node* subL = subR-> _left;
+        
+        parent->_parent = subR;
+        
+        
+    }
+    
+private:
+    Node* _root = nullptr;
     
 };
 
