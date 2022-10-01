@@ -79,7 +79,8 @@ public:
         cur->_parent = parent;
         //按照搜索树的规则进行插入内容
         
-        while (parent) {
+        
+        while (parent) {//更新平衡因子
             
             if (cur == parent->_right) {
                 parent->_bf++;
@@ -88,6 +89,7 @@ public:
                 parent->_bf--;
                 
             }
+            
             
             if (parent->_bf == 0) {
                 break;
