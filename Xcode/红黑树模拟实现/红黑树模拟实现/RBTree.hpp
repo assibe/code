@@ -48,9 +48,52 @@ struct RBTree{
     typedef RBTreeNode<K, V> Node;
 public:
     
+    bool insert(const pair<K, V> &kv){
+        
+        if (_root == nullptr) {
+            _root = new Node(kv);
+            _root->_bf = 0;
+            return true;
+        }
+        
+        Node* parent = nullptr;
+        Node* cur = _root;
+        
+        while (cur) {
+            
+            if (_root->_kv.first <= kv.first) {
+                parent = cur;
+                cur = cur->_right;
+            }
+            else if (cur->_kv.first > kv.first){
+                
+                parent = cur;
+                cur = cur ->_left;
+                
+            }
+            else{
+                return false;
+            }
+        }
+        
+        cur = new Node(kv);
+        if (parent->_kv.first > kv.first) {
+            parent->_right = cur;
+        }
+        else{
+            parent->_left = cur;
+        }
+        cur->_parent = parent;
+        //按照搜索树的规则进行插入内容
+        
+        
+    }
+    
     
 private:
     Node* _root = nullptr;
     
-}
+};
+
+
 
