@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		211AC0FB28E8BDBE0082B52A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 211AC0FA28E8BDBE0082B52A /* main.cpp */; };
+		21C0D1B428E9F65500370040 /* RBTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21C0D1B228E9F65500370040 /* RBTree.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		211AC0F728E8BDBE0082B52A /* 红黑树模拟实现 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "红黑树模拟实现"; sourceTree = BUILT_PRODUCTS_DIR; };
 		211AC0FA28E8BDBE0082B52A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		21C0D1B228E9F65500370040 /* RBTree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RBTree.cpp; sourceTree = "<group>"; };
+		21C0D1B328E9F65500370040 /* RBTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RBTree.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				211AC0FA28E8BDBE0082B52A /* main.cpp */,
+				21C0D1B228E9F65500370040 /* RBTree.cpp */,
+				21C0D1B328E9F65500370040 /* RBTree.hpp */,
 			);
 			path = "红黑树模拟实现";
 			sourceTree = "<group>";
@@ -120,6 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				211AC0FB28E8BDBE0082B52A /* main.cpp in Sources */,
+				21C0D1B428E9F65500370040 /* RBTree.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
