@@ -10,6 +10,7 @@
 
 #include <stdio.h>
 #include<utility>
+#include <assert.h>
 
 
 #endif /* RBTree_hpp */
@@ -85,6 +86,16 @@ public:
         }
         cur->_parent = parent;
         //按照搜索树的规则进行插入内容
+        
+        while (parent && parent->_col == RED) {//
+            
+            Node* grandfater = parent->_parent;
+            assert(grandfater);
+             
+            
+            
+        }
+        
         
         
     }
