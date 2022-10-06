@@ -92,12 +92,38 @@ public:
             Node* grandfater = parent->_parent;
             assert(grandfater);
              
+            if (grandfater->_left == parent) {
+                
+                Node* uncle = grandfater->_right;//叔叔的具体信息
+                if (uncle &&uncle->_col == RED) {
+                    
+                    parent->_col = BLACK;
+                    grandfater->_col = RED;
+                    
+                    cur = grandfater;
+                    parent = cur ->_parent;
+                }
+                
+            }
+            else{
+                
+                Node* uncle = grandfater->_left;
+                if (uncle && uncle->_col == RED) {
+                    
+                    parent->_col = BLACK;
+                    grandfater->_col =  RED;
+                    
+                    cur = grandfater;
+                    parent = grandfater->_parent;
+                }
+            }
+            
             
             
         }
         
-        
-        
+        _root->_col = BLACK;
+        return true;
     }
     
     
