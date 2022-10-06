@@ -103,6 +103,29 @@ public:
                     cur = grandfater;
                     parent = cur ->_parent;
                 }
+                else{
+                    
+                    if (cur == parent->_left) {// 右单旋
+                      // g
+                     //p
+                    //c
+                        RotateR(grandfater);
+                        parent->_col = BLACK;
+                        grandfater->_col = RED;
+                        
+                    }
+                    else{//双旋
+                        //   g
+                        //p
+                        //  c
+                        RotateL(parent);
+                        RotateR(grandfater);
+                        cur->_col = BLACK;
+                        grandfater->_col = RED;
+                        
+                    }
+                    break;
+                }
                 
             }
             else{
@@ -116,14 +139,96 @@ public:
                     cur = grandfater;
                     parent = grandfater->_parent;
                 }
+                else{
+                  
+                    if (cur == parent->_right) {
+                        
+                        RotateL(grandfater);
+                        parent->_col = BLACK;
+                        grandfater->_col = RED;
+                        
+                    }
+                    else{
+                        
+                        RotateR(parent);
+                        RotateL(grandfater);
+                        cur->_col = BLACK;
+                        grandfater->_col = RED;
+                        
+                    }
+                    break;
+                }
             }
-            
-            
-            
         }
         
         _root->_col = BLACK;
         return true;
+    }
+    
+private:
+
+    
+    void RotateL(Node* parent){
+        
+        Node* subR = parent->_right;
+        Node* subRL = subR->_left;
+        
+        parent->_right = subRL;
+        
+        if (subRL) {
+            subRL->_parent = parent;
+        }
+        
+        Node* ppNode = parent->_parent;
+        
+        subR->_left = parent;
+        parent->_parent = subR;
+        
+        if (parent == _root) {
+            _root->_parent = nullptr;
+            _root = subR;
+        }
+        else{
+            
+            if (ppNode->_left == parent) {
+                ppNode->_left = subR;
+            }
+            else{
+                ppNode->_right = subR;
+            }
+        }
+        
+    }
+    
+    void RotateR(Node* parent){
+        
+        Node* subL = parent->_left;
+        Node* subLR = subL->_right;
+        
+        parent->_right = subLR;
+        if (subLR) {//判读断是非为空
+            subLR ->_parent =parent;
+        }
+        
+        Node* pNode = parent->_parent;
+        subL = parent;
+        parent->_parent = subL;
+        
+        if (parent == _root) {
+            _root = subL;
+            _root->_parent = nullptr;
+        }
+        else{
+            subL->_parent = pNode;
+            if (pNode->_left == parent) {
+                pNode->_left = subL;
+            }
+            else{
+                pNode->_right = subL;
+            }
+            
+        }
+        
     }
     
     
