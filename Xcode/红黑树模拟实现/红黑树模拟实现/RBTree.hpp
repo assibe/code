@@ -53,7 +53,6 @@ public:
         
         if (_root == nullptr) {
             _root = new Node(kv);
-            _root->_bf = 0;
             return true;
         }
         
@@ -164,6 +163,19 @@ public:
         _root->_col = BLACK;
         return true;
     }
+    
+    int _Heiht(Node* root){
+        
+        if (root == nullptr) {
+            return 0;
+        }
+        
+        int lh = _Heiht(root->_left);
+        int rh = _Heiht(root->_right);
+        
+        return lh > rh ? lh + 1: rh + 1;
+    }
+    
     
 private:
 
