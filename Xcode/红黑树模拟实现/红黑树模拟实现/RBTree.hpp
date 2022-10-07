@@ -11,6 +11,7 @@
 #include <stdio.h>
 #include<utility>
 #include <assert.h>
+#include <iostream>
 
 
 #endif /* RBTree_hpp */
@@ -23,6 +24,7 @@ enum Colour{
 };
 
 using namespace std;
+
 
 template<class K,class V>
 
@@ -241,6 +243,65 @@ private:
             
         }
         
+    }
+    
+    int _maxHeight(Node* root){
+        
+        if (root == nullptr) {
+            return 0;
+        }
+        
+        int lh = _maxHeight(root->_left);
+        int rh = _maxHeight(root->_right);
+        
+        return rh > lh ? lh + 1: rh + 1;
+    }
+    
+    int _minHeight(Node* root){
+        
+        if (root == nullptr) {
+            return 0;
+        }
+        
+        int lh = _maxHeight(root->_left);
+        int rh = _maxHeight(root->_right);
+        
+        return rh < lh ? lh + 1: rh + 1;
+    }
+    
+    void _InOrder(Node* root){//前序遍历
+        
+        if (root == nullptr) {
+            return;
+        }
+        
+        _InOrder(root->_right);
+        cout << root->_kv.first << " ";
+        _InOrder(root->_left);
+    }
+    
+    bool _IsValidRBTree(Node* pRoot,size_t k,const size_t blackCount){
+        
+        if (nullptr == pRoot) {
+            
+            if (k != blackCount) {
+                cout << "违反性质四：每条的路径中黑色节点的个树必须相同" << endl;
+                return false;
+            }
+            return true;
+        }
+        
+        if (pRoot == BLACK) {
+            
+            k++;
+        }
+        
+        if (pRoot->_col == RED && pRoot->_parent && pRoot->_parent->_col == RED) {
+            
+            cout << "违反性质三：存在连在一起的红色节点" << endl;
+        }
+        
+        return _IsValidRBTree(pRoot->_left, k, blackCount) && _IsValidRBTree(pRoot->_left, k, blackCount);
     }
     
     

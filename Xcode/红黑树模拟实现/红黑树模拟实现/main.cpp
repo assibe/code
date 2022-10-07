@@ -22,6 +22,5 @@ int main(int argc, const char * argv[]) {
         t.insert(make_pair(e, e));
     }
     
-    cout << _Heiht(t);
     return 0;
 }
