@@ -45,6 +45,8 @@ struct RBTreeNode{
     
 };
 
+
+
 template<class K,class V>
 
 struct RBTree{
@@ -91,7 +93,7 @@ public:
         while (parent && parent->_col == RED) {//
             
             Node* grandfater = parent->_parent;
-            assert(grandfater);
+//            assert(grandfater)
              
             if (grandfater->_left == parent) {
                 
