@@ -33,15 +33,18 @@ private:
     T* _ptr;
 };
 
+template<class T>
+
+class auto_ptr{
+    
+  
+    
+private:
+    T* _ptr;
 };
 
 
 
 
 
-
-
-
-
-
-
+};
