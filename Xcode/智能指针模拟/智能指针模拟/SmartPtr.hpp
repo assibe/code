@@ -37,14 +37,41 @@ template<class T>
 
 class auto_ptr{
     
-  
+public:
+    auto_ptr(T* ptr)
+    :_ptr(ptr){};
+    
+    ~auto_ptr(){
+        
+        if (_ptr) {
+            delete _ptr;
+            _ptr = nullptr;
+        }
+    }
+    
+    auto_ptr(auto_ptr<T>& sp)
+    :_ptr(sp)
+    {
+        sp._ptr = nullptr;
+    }
+
+    
+    T& operator*(){
+
+        return *_ptr;
+    }
+
+    T* operator->(){
+
+        return _ptr;
+    };
+    
+    T *get(){
+        
+        return _ptr;
+    }
     
 private:
     T* _ptr;
 };
-
-
-
-
-
 };
