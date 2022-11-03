@@ -172,3 +172,11 @@ private:
     int* _pCount;
     
 };
+
+template<class T>
+
+class weak_ptr{
+    
+private:
+    T* _ptr;
+};
