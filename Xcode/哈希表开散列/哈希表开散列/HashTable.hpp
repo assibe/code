@@ -56,6 +56,12 @@ class HashDate{
     pair<K, V> _kv;
     State _state;
     
+    
+    
+    
+    
+    
+    
 };
 
 template <class K,class V,class HashFunc = DefaultHash<K>>

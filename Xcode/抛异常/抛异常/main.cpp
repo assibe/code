@@ -27,6 +27,7 @@ int main(int argc, const char * argv[]) {
     // insert code here...
     cout << "Hello, World!\n";
     
+    int i = const——
     try {
         Add(1);
     } catch (const char* reemsg) {
