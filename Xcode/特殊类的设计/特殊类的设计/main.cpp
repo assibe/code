@@ -27,5 +27,41 @@ private:
 
 class Heaponly{
     
+    static Heaponly* Createobject(){
+        
+        return new Heaponly;
+    }
+    Heaponly(const Heaponly&) = delete;
     
-}
+private:
+    Heaponly(){}
+    
+};
+
+//只能在栈上创建对象
+
+class Stackonly {
+    
+    static Stackonly* Createobj(){
+        
+        return Stackonly;
+    };
+    
+private:
+    Stackonly()
+    :_a(0){}
+
+    int _a;
+};
+
+
+//不可以被继承的类
+
+class A final{
+    
+};
+
+//
+
+
+
