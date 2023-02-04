@@ -25,7 +25,7 @@ int main(int argc, const char * argv[]) {
     if (fd == 0) { //子程序
         
         close(pipefd[0]);
-        char i[64] = "oihohphpuipogi";
+        char i[64] = "i am fathe";
         
         while (1) {
             sleep(10);
