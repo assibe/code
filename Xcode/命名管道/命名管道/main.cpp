@@ -6,9 +6,17 @@
 //
 
 #include <iostream>
+#include <sys/errno.h>
+#include <sys/types.h>
+#include <sys/stat.h>
 
 int main(int argc, const char * argv[]) {
     // insert code here...
     std::cout << "Hello, World!\n";
+    
+    
+    mkfifo("/zhorenxi", EACCES);
+    
+    perror("dadfaf");
     return 0;
 }
