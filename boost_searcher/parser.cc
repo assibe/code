@@ -27,11 +27,14 @@ int main(){
 		std::cerr << "parase html error" << std::endl;
 		return 2;
 	}
-
-	if(!Save(result,&output)){
+	if(!SaveHtml(result,&output)){
 		std::cerr<< "save html error";
 		return 3;
 	}
 
 }
 
+bool EnumFile(const std::string &src_path,std::string *file_list){
+
+	
+}
