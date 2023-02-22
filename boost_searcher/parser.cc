@@ -1,40 +1,39 @@
-#include<stdio.h>
 #include<string>
 #include<vector>
-#include<cerr>
+#include<iostream>
 
-const std::string src_path="data/input"
-const std::string raw = "data/output/raw.txt"
+const std::string src_path = "data/input/";
+const std::string output = "data/raw_html/raw.txt";
 
 typedef struct DocInfo{
-
+	
 	std::string title;
 	std::string content;
 	std::string url;
-}DocInfo;
 
+}DocInfo_t;
+
+bool EnumFile(const std::string &src_path,std::vector<std::string> *filst_list);
+bool ParseHtml(const std::string<std::string> ,) 
 int main(){
-	std::vector<std::string> file_list;
 	
-	if(!EnumFile(src_path,&file_list)){//c储存
-		std::cerr << "enum file name errors" << std::endl;
+	std::vector<std::string> filst_list;
+	if(!EnumFile(src_path,&filst_list)){
+		
+		std::cerr<<"EnumFile faile" << std::endl;
 		return 1;
 	}
 
-	std::vector<DocInfo> result;
-	if(!ParseHetml(file_list,result)){
-
-		std::cerr << "parase html error" << std::endl;
+	DocInfo_t results;	
+	if(!ParseHtml(filst_list,results)){
+		std::cerr << "parse html error" << std::endl;
 		return 2;
 	}
-	if(!SaveHtml(result,&output)){
-		std::cerr<< "save html error";
+
+	if(!SaveHtml(results,output)){
+		std::cerr << "save error";
 		return 3;
 	}
-
-}
-
-bool EnumFile(const std::string &src_path,std::string *file_list){
-
 	
+	return 0;
 }
