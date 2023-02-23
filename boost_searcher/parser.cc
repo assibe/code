@@ -72,20 +72,20 @@ bool EnumFile(const std::string &src_path,std::vector<std::string> *files_list){
 
 bool ParseHtml(const std::vector<std::string> &files_list,std::vector<DocInfo_t> *reselts){
 	
-	for(const std::string &file ;files_list){
+	for(const std::string &file:files_list){
 		
 		std::string results;
-		if(!nsutil::FileUtil::ReadFile(file,&result)){
+		if(!ns_util::FileUtil::ReadFile(file,&results)){
 			continue;
 		}
 
 		DocInfo_t doc;
 
-		if(!ParseTitle(result,&doc.title)){
+		if(!ParseTitle(results,&doc.title)){
 			continue;
 		}
 
-		if(!ParseContent(result,&doc.content))	{
+		if(!ParseContent(results,&doc.content))	{
 
 			continue;
 		}
@@ -99,5 +99,9 @@ bool ParseHtml(const std::vector<std::string> &files_list,std::vector<DocInfo_t>
 
 	return true;
 	}
+
+	
+
+
 
 bool SaveHtml(const DocInfo_t  &results,const const std::string &output);
