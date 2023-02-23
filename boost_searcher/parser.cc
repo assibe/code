@@ -1,6 +1,7 @@
 #include<string>
 #include<vector>
 #include<iostream>
+#include"util.hpp"
 #include<boost/filesystem.hpp>
 
 const std::string src_path = "data/input/";
@@ -54,8 +55,8 @@ bool EnumFile(const std::string &src_path,std::vector<std::string> *files_list){
 	}
 
 	boost::filesystem::recursive_directory_iterator end;
-	if(boost::filesystem::recursive_directory_iterator iter(root_path);iter != end;iter++){
-		if(boost::filesystem::is_regular(*iter)){
+	for(boost::filesystem::recursive_directory_iterator iter(root_path);iter != end;iter++){
+		if(boost::filesystem::is_regular_file(*iter)){
 			continue;
 		}
 
@@ -68,12 +69,13 @@ bool EnumFile(const std::string &src_path,std::vector<std::string> *files_list){
 	files_list->push_back(iter->path().string());
 
 	}
+
 bool ParseHtml(const std::vector<std::string> &files_list,std::vector<DocInfo_t> *reselts){
 	
-	for(cosnt std::string &file ;files_list){
+	for(const std::string &file ;files_list){
 		
-		string results;
-		if(!nus_util::File,&result){
+		std::string results;
+		if(!nsutil::FileUtil::ReadFile(file,&result)){
 			continue;
 		}
 
@@ -91,9 +93,11 @@ bool ParseHtml(const std::vector<std::string> &files_list,std::vector<DocInfo_t>
 		if(!ParseUrl()){
 			continue;
 		}
-
+		
 		results->push_back(doc);
 	}
+
 	return true;
-				}
+	}
+
 bool SaveHtml(const DocInfo_t  &results,const const std::string &output);
