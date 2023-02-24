@@ -94,8 +94,8 @@ bool ParseHtml(const std::vector<std::string> &files_list,std::vector<DocInfo_t>
 			continue;
 		}
 		
-		results->push_back(doc);
-	}
+		results->push_back(move(doc));
+		}
 
 	return true;
 	}
