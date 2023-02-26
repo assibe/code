@@ -4,6 +4,8 @@
 #include"util.hpp"
 #include<boost/filesystem.hpp>
 
+using namespace std;
+
 const std::string src_path = "data/input/";
 const std::string output = "data/raw_html/raw.txt";
 
@@ -104,4 +106,25 @@ bool ParseHtml(const std::vector<std::string> &files_list,std::vector<DocInfo_t>
 
 
 
-bool SaveHtml(const DocInfo_t  &results,const const std::string &output);
+bool SaveHtml(const DocInfo_t  &results, const std::string &output){
+
+	#define SEP '\3'
+	ofstream out(output,std::ios::put | std::ios::binary);
+	if(!out.is_open()){
+		std::cerr << "open" << output << "failed" <<std::endl;
+		return false;
+	}
+
+	for(auto &item : results){
+		
+		std::string out_string;
+		out_string = item.title;
+		out_string += SEP;
+		out_string += item.content;
+		out_string += item.url; 
+
+	}
+
+	out.close;
+	return true;
+}
