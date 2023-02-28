@@ -17,6 +17,7 @@ typedef struct DocInfo{
 
 }DocInfo_t;
 
+uint16_t
 
 bool EnumFile(const std::string &src_path,std::vector<std::string> *filst_list);
 bool ParseHtml(const std::vector<std::string> &files_list,std::vector<DocInfo_t> *reselts) ;
@@ -103,8 +104,6 @@ bool ParseHtml(const std::vector<std::string> &files_list,std::vector<DocInfo_t>
 	}
 
 	
-
-
 
 bool SaveHtml(const DocInfo_t  &results, const std::string &output){
 
