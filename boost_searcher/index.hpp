@@ -64,7 +64,7 @@ namespace ns_index{
             return nullptr;
         }
 
-        return           
+        return      &(iter->second);     
     }
 
     bool BuildIndex(const string &input){

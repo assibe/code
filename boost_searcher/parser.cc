@@ -127,3 +127,4 @@ bool SaveHtml(const DocInfo_t  &results, const std::string &output){
 	out.close;
 	return true;
 }
+
