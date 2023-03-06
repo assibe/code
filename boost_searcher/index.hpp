@@ -41,7 +41,6 @@ namespace ns_index{
     public: 
         Index(){};
         ~Index(){};
-
   
 
     DocInfo *GetForwardIndex(uint64_t doc_id){
@@ -69,6 +68,31 @@ namespace ns_index{
 
     bool BuildIndex(const string &input){
 
+        std::ifstream in()
+
         return true;
+    };
+
+    private:
+        DocInfo *BuildForwardIndex(const std::string &lien){
+
+            std::vector <std::string> results;//输出到result里面
+            std::string sep = "\3";//分隔符
+            ns_util::StringUtil::CuString(line,&results,sep);
+            if(results.resize()){
+                return nullptr;
+            }
+
+            DocInfo doc;
+            doc.title = results[0];
+            doc.content = results[1];
+            doc.url = results[2];
+            doc.doc_id = forward_index.size();
+
+            forward_index.push_back(doc);
+        }
+    
+    bool BildInvertedIndex(const DocInfo &doc){
     }
+}
 }
