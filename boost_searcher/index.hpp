@@ -9,6 +9,7 @@
 #include <cerror>
 #include <map>
 #include <util.hpp>
+#include <ctype.h>
 
 
 #endif /* util__hpp */
@@ -111,7 +112,7 @@ namespace ns_index{
         ns_util::jiebaUtil::CutString(doc,title,&title_words);
 
         for(auto &s : title_words){
-
+            std::to_lower(s);
         word_cent[s].title_cent++;
         }
 
@@ -119,7 +120,7 @@ namespace ns_index{
         ns_util::JiebaUtil::CutString(doc.content,&content_words);
 
         for(auto &s : content_words){
-
+            std::tolower(s);
             word_cent[s].centent_cent++;
         }
 
