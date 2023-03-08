@@ -8,6 +8,7 @@
 #include<string>
 #endif /* util__hpp */
 
+ns_util::StringUtil::CuString(line,&results,sep);
 
 namespace ns_util{
     

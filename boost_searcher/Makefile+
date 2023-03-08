@@ -1,6 +1,7 @@
 cc=g++
 
 paraser:paraser.cc index.hpp util.hpp 
+
 	$(cc) -o $@ $^ -std=c++11 -l boost_filesystem -l boost_system
 .PHONY:clean
 clean:

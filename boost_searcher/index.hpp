@@ -7,6 +7,9 @@
 #include <fstream>
 #include <string>
 #include <cerror>
+#include <map>
+#include <util.hpp>
+
 
 #endif /* util__hpp */
 
@@ -93,6 +96,34 @@ namespace ns_index{
         }
     
     bool BildInvertedIndex(const DocInfo &doc){
+
+        struct word_cent{
+
+            int title_cent;
+            int content_cnt;
+
+            word_cent(),title_cent(0),content_cnt(0){}//初始化
+        }
+
+        std::unoredered_map <std::string,word_cent> word_map;
+        
+        std::vector <std::string> title_words;
+        ns_util::jiebaUtil::CutString(doc,title,&title_words);
+
+        for(auto &s : title_words){
+
+        word_cent[s].title_cent++;
+        }
+
+        std::vector <std::string> content_words;
+        ns_util::JiebaUtil::CutString(doc.content,&content_words);
+
+        for(auto &s : content_words){
+
+            word_cent[s].centent_cent++;
+        }
+
+        return true;
     }
-}
+    }
 }
