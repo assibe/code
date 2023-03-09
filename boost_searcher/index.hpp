@@ -10,9 +10,14 @@
 #include <map>
 #include <util.hpp>
 #include <ctype.h>
+#include <boost.h>
 
 
 #endif /* util__hpp */
+
+
+#define Y 
+#define X
 
  using namespace std;
 
@@ -112,16 +117,28 @@ namespace ns_index{
         ns_util::jiebaUtil::CutString(doc,title,&title_words);
 
         for(auto &s : title_words){
-            std::to_lower(s);
+            boost::to_lower(s);
         word_cent[s].title_cent++;
         }
 
         std::vector <std::string> content_words;
         ns_util::JiebaUtil::CutString(doc.content,&content_words);
 
-        for(auto &s : content_words){
-            std::tolower(s);
+        for(string  &s : content_words){
+
+            boost::to_lower(s);
             word_cent[s].centent_cent++;
+
+        }
+
+        for(auto & word_pair : word_map){
+
+           InvertedElem item;
+            item.doc_id = doc.doc_id;
+            item.word = word_pair.first;
+            item.weight = X * word_pair.second.title _cnt + Y * word_pair.second.content_cent;
+            InvertedList &inverted_list = inverted_index[word_pair.first]; 
+            Inverted_list.push_back(item);
         }
 
         return true;
