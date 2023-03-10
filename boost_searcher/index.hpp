@@ -41,15 +41,30 @@ namespace ns_index{
     typedef  vector<InvertedElem> InvertedList;
 
 
+
     class Index{
         
     private:
         vector<DocInfo> forward_index;
         unordered_map<string,InvertedList> inverted_index;
 
-    public: 
+    private:
         Index(){};
-        ~Index(){};
+        Index(const Index&) = delete;
+        Index& operator = (const Index&) = delete;
+
+    public:
+        static Index* GetInstance(){
+
+            if(nullptr == instance){
+
+                mtx.lock();
+                if(nullptr == instance){
+                    instance = new Index();
+                }
+                mtx.unlock();
+            }
+        }
   
 
     DocInfo *GetForwardIndex(uint64_t doc_id){
