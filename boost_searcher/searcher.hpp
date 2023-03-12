@@ -42,7 +42,13 @@ namespace ns_searcher{
 
             std::vector<ns_index::InvertedList> inverted_list_all;
             for(std::string word: words){
-                
+
+                boost::to_lower(word); 
+                ns_index::InvertedList *inverted_list = index -> GetInvertedList(word);
+                if(nullptr == inverted_list){
+                    continue;
+                }
+                inverted_list_all.insert(inverted_list_all.end(),inverted_list.begin(),inverted_list.end());
             }
         }
     };
