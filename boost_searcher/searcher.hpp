@@ -7,8 +7,9 @@
 #define search.hpp
 
 #include <util.hpp>
+#include <string>
 #include <index.hpp>
-#include <j>
+#include <vector>
 
 #endif
 
@@ -36,8 +37,13 @@ namespace ns_searcher{
 
         void Searcher(const std::string &query,std::string *json_string){
             
+            std::vector <std::string> words;
             std::JiebaUtil::CutString(query,&words);
 
+            std::vector<ns_index::InvertedList> inverted_list_all;
+            for(std::string word: words){
+                
+            }
         }
     };
     
