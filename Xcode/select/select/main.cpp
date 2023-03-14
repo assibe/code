@@ -15,7 +15,13 @@
 int main(int argc, const char * argv[]) {
     // insert code here...
     
+    int fd[2] = {0};
     fd_set readset;
+    struct timeval i = {300,0};
+//    i.tv_usec;
+    std::cout << sizeof(fd_set) << std::endl;
+    
+//    select(fd[2], <#fd_set *#>, <#fd_set *#>, <#fd_set *#>, <#struct timeval *#>)
     
     return 0;
 }
