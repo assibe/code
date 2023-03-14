@@ -40,17 +40,19 @@ namespace ns_searcher{
             std::vector <std::string> words;
             std::JiebaUtil::CutString(query,&words);
 
-            std::vector<ns_index::InvertedList> inverted_list_all;
+            ns_index::InvertedList inverted_list_all;
             for(std::string word: words){
 
                 boost::to_lower(word); 
                 ns_index::InvertedList *inverted_list = index -> GetInvertedList(word);
                 if(nullptr == inverted_list){
                     continue;
+                    
                 }
-                inverted_list_all.insert(inverted_list_all.end(),inverted_list.begin(),inverted_list.end());
-            }
-        }
+                inverted_list_all.insert(inverted_list_all.begin(),inverted_list_all.end(),\[](const ns_index::InvertedElem &e1,
+                const ns_index::InvertedElem &e2));
+                }
+    
     };
     
 }

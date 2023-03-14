@@ -2,6 +2,8 @@
 #define util__hpp
 
 #include <stdio.h>
+#include <boost/algorithm/string.hpp>
+#include "/home/zhorenxi/test/inc/cppjieba/Jieba.hpp"
 
 #include<iostream>
 #include<fstream>
