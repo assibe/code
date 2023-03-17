@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 #include <boost/algorithm/string.hpp>
-#include "/home/zhorenxi/test/inc/cppjieba/Jieba.hpp"
+#include "/inc/cppjieba/Jieba.hpp"
 
 #include<iostream>
 #include<fstream>

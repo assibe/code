@@ -49,10 +49,21 @@ namespace ns_searcher{
                     continue;
                     
                 }
-                inverted_list_all.insert(inverted_list_all.begin(),inverted_list_all.end(),\[](const ns_index::InvertedElem &e1,
-                const ns_index::InvertedElem &e2));
+                inverted_list_all.insert(inverted_list_all.end(),inverted_list.begin(),inverted_list.end(),
+                [](const ns_index::InvertedElem &e1,const ns_index::InvertedElem &e2){
+                    e1.weight > e2.weight}
+                );
+            }
+
+            for(auto &item : inverted_list_all){
+                
+                ns_index::DoInfo *doc = index->GetForwardIndex(item,doc_id);
+                if(nullptr == doc){
+                    continue;
                 }
-    
+            }
+
+        }
     };
     
 }
