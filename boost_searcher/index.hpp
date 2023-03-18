@@ -153,10 +153,13 @@ namespace ns_index{
             item.word = word_pair.first;
             item.weight = X * word_pair.second.title _cnt + Y * word_pair.second.content_cent;
             InvertedList &inverted_list = inverted_index[word_pair.first]; 
-            Inverted_list.push_back(item);
+            Inverted_list.push_back(std::move(item));
         }
 
         return true;
     }
     }
+
+    Index* Index::instance = nullptr;
+    std::mutex Index::mtx;
 }

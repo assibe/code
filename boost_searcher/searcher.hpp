@@ -10,11 +10,9 @@
 #include <string>
 #include <index.hpp>
 #include <vector>
+#include <jsoncpp/json/json.h>
 
 #endif
-
-
-
 
 namespace ns_searcher{
 
@@ -49,7 +47,7 @@ namespace ns_searcher{
                     continue;
                     
                 }
-                inverted_list_all.insert(inverted_list_all.end(),inverted_list.begin(),inverted_list.end(),
+                inverted_list_all.insert(inverted_list_all.end(),inverted_list->begin(),inverted_list->end(),
                 [](const ns_index::InvertedElem &e1,const ns_index::InvertedElem &e2){
                     e1.weight > e2.weight}
                 );
@@ -57,14 +55,22 @@ namespace ns_searcher{
 
             for(auto &item : inverted_list_all){
                 
+                Json::Value root;
                 ns_index::DoInfo *doc = index->GetForwardIndex(item,doc_id);
                 if(nullptr == doc){
                     continue;
                 }
 
-            //第27节课的位置
-            }
+                Json::Value elem = doc->title;
+                elem["title"] = doc->title;
+                elem["desc"] = doc->content;
+                elem["url"] = doc->url;
 
+                root.append(elem);
+                }
+
+                Json::StyledWriter writer;
+                *json_string = writer.write(root);
         }
     };
     
