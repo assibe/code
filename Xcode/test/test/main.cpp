@@ -23,6 +23,10 @@ int main(int argc, const char * argv[]) {
     unique_lock<mutex> lock(_mutex);
     pthread_cond_t &ti;
     
+    
+    
+    
+    fork();
     va_list a;
     struct sockaddr local;
     return 0;
