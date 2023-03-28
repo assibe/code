@@ -7,7 +7,8 @@
 
 #include <iostream>
 #include <mutex>
-
+#include <stdio.h>
+#include <stdlib.h>
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
@@ -16,18 +17,12 @@
 
 using namespace std;
 
-int main(int argc, const char * argv[]) {
+int main(int argc, const char * argv[],char *env[]) {
     // insert code here...
     
-    std::mutex _mutex;
-    unique_lock<mutex> lock(_mutex);
-    pthread_cond_t &ti;
+    int i = 1;
+    float* p = (float*) &i;
+    cout << *p << endl;
     
-    
-    
-    
-    fork();
-    va_list a;
-    struct sockaddr local;
     return 0;
 }
