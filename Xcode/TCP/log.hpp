@@ -1,17 +1,12 @@
-#ifndef log_hpp
-#define log_hpp
+#pragma once
 
 #include <cstdio>
 #include <ctime>
-#include<cstdarg>
-#include<cstring>
-#include<stdlib.h>
+#include <cstdarg>
 #include <cassert>
-#include<cerrno>
-
-#endif
-
-// degbug notice warining fatal 
+#include <cstring>
+#include <cerrno>
+#include <stdlib.h>
 
 
 #define DEBUG 0
@@ -31,11 +26,9 @@ void logMessage(int level,const char *format,...){
     char logInfo[1024];
     va_list ap;
     va_start (ap,format);
-    vsnprintf(logInfo,sizeof(logInfo),format,ap);
+    vsnprintf(logInfo,sizeof(logInfo) - 1,format,ap);
     va_end(ap);
     
     FILE *out = (level == FATAL) ? stderr:stdout;
     fprintf(out,"%s|%u|%s|%s\n",log_level[level],(unsigned int)time(nullptr),name == nullptr ? "unknow":name,logInfo);
 }
-
-
