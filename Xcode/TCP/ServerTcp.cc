@@ -6,7 +6,7 @@
 #include<netinet/in.h>
 #include <cstring>
 
-class ServerTcp;
+
 
 class ServerTcp{
 
@@ -14,11 +14,12 @@ public:
     ServerTcp(uint16_t port, const std::string &ip = "") : port_(port), ip_(ip), listenSock_(-1){}
     ~ServerTcp(){}
 
+    
 
 public:
 
     void init(){
-        listenSock_ = socket(AF_INET,SOCK_STREAM,0);
+        listenSock_ = socket(AF_INET,SOCK_STREAM,0);//创建socket
 
         if(listenSock_ < 0){
 
@@ -30,7 +31,7 @@ public:
 
         struct sockaddr_in local;
         memset(&local,0,sizeof(local));
-        local.sin_family = PF_INET;
+        local.sin_family = AF_INET;
         local.sin_port = htons(port_);
         ip_.empty() ? (local.sin_addr.s_addr = INADDR_ANY) : (inet_aton(ip_.c_str(),&local.sin_addr));
 
@@ -81,8 +82,7 @@ public:
 
 }
 
-void transService(int sock, const std::string &clientIp, uint16_t clientPort)
-    {
+void transService(int sock, const std::string &clientIp, uint16_t clientPort){
         assert(sock >= 0);
         assert(!clientIp.empty());
         assert(clientPort >= 1024);
@@ -128,15 +128,15 @@ void transService(int sock, const std::string &clientIp, uint16_t clientPort)
         // 只要走到这里，一定是client退出了，服务到此结束
         close(sock); // 如果一个进程对应的文件fd，打开了没有被归还，文件描述符泄漏！
         logMessage(DEBUG, "server close %d done", sock);
-    }
-
-    
+    };
 
 private:
     int listenSock_;
     u_int16_t port_;
     std::string ip_;
+
 };
+
 
     static void Usage(std::string proc){
         std::cerr << "Usage:\n\t" << proc << "port ip" << std::endl;
@@ -155,6 +155,7 @@ int main(int argc,char *argv[]){
     if(argc == 3){
         ip = argv[2];
     }
+
 
     ServerTcp svr(port,ip);
     svr.init();
