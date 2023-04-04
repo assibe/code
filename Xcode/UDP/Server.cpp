@@ -47,7 +47,15 @@ public:
         char outbuffer[1024];
         while (true)
         {
-            
+            struct sockaddr_in peer;
+            socklen_t len = sizeof(peer);
+
+            ssize_t s = recvfrom(sockfd_,inbuffer,sizeof(inbuffer) - 1,0,(const struct sokcaddr*)&peer,&len);     
+
+            if(s > 0){
+                inbuffer[s] = 0;
+            }  
+
         }
         
     }
