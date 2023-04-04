@@ -1,7 +1,0 @@
-{
-    "files.associations": {
-        "cstring": "cpp",
-        "cstdio": "cpp"
-    },
-    "C_Cpp.errorSquiggles": "enabled"
-}
