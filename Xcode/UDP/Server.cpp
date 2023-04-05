@@ -9,7 +9,7 @@
 #include <map>
 #include <unordered_map>
 #include "Log.hpp"
-
+                                    
 class Server{
 
 public:
@@ -50,14 +50,21 @@ public:
             struct sockaddr_in peer;
             socklen_t len = sizeof(peer);
 
-            ssize_t s = recvfrom(sockfd_,inbuffer,sizeof(inbuffer) - 1,0,(const struct sokcaddr*)&peer,&len);     
+            ssize_t s = recvfrom(sockfd_,inbuffer,sizeof(inbuffer) - 1,0,(struct sockaddr*)&peer,&len);     
 
             if(s > 0){
                 inbuffer[s] = 0;
             }  
+            else if(s == -1){
 
-        }
-        
+                logMessage(WARINING,"recvfrom : %d : %d",strerror(errno),sockfd_);
+                continue;
+
+            }
+            std::string peerIp = inet_ntoa(peer.sin_addr);
+            uint32_t peerPort = ntohs(peer.sin_port);
+            
+        }   
     }
     
 private:
