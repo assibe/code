@@ -5,10 +5,21 @@
 //  Created by 周仁玺 on 2023/4/10.
 //
 
-#include <iostream>
-
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
-}
+class Solution {
+public:
+    int missingNumber(vector<int>& nums) {
+        unordered_set<int> set;
+        int n = nums.size() + 1;
+        for (int i = 0; i < n - 1; i++) {
+            set.insert(nums[i]);
+        }
+        int missing = -1;
+        for (int i = 0; i <= n - 1; i++) {
+            if (!set.count(i)) {
+                missing = i;
+                break;
+            }
+        }
+        return missing;
+    }
+};
