@@ -24,31 +24,31 @@
 
 using namespace std;
 
-std::string getPath(std::string http_request){
-    std::size_t pos = http_request.find(CRLF);
-    if(pos == std::string::npos) return "";
-    std::string request_line = http_request.substr(0, pos);
-    //GET /a/b/c http/1.1
-    std::size_t first = request_line.find(SPACE);
-    if(pos == std::string::npos) return "";
-    std::size_t second = request_line.rfind(SPACE);
-    if(pos == std::string::npos) return "";
+// std::string getPath(std::string http_request){
+//     std::size_t pos = http_request.find(CRLF);
+//     if(pos == std::string::npos) return "";
+//     std::string request_line = http_request.substr(0, pos);
+//     //GET /a/b/c http/1.1
+//     std::size_t first = request_line.find(SPACE);
+//     if(pos == std::string::npos) return "";
+//     std::size_t second = request_line.rfind(SPACE);
+//     if(pos == std::string::npos) return "";
 
-    std::string path = request_line.substr(first+SPACE_LEN, second - (first+SPACE_LEN));
-    if(path.size() == 1 && path[0] == '/') path += HOME_PAGE;
-    return path;
-}
+//     std::string path = request_line.substr(first+SPACE_LEN, second - (first+SPACE_LEN));
+//     if(path.size() == 1 && path[0] == '/') path += HOME_PAGE;
+//     return path;
+// }
 
-std::string readFile(const std::string &recource)
-{
-    std::ifstream in(recource, std::ifstream::binary);
-    if(!in.is_open()) return "404";
-    std::string content;
-    std::string line;
-    while(std::getline(in, line)) content += line;
-    in.close();
-    return content;
-}
+// std::string readFile(const std::string &recource)
+// {
+//     std::ifstream in(recource, std::ifstream::binary);
+//     if(!in.is_open()) return "404";
+//     std::string content;
+//     std::string line;
+//     while(std::getline(in, line)) content += line;
+//     in.close();
+//     return content;
+// }
 
 
 void handlerHttpRequest(int sock)
@@ -59,24 +59,34 @@ void handlerHttpRequest(int sock)
 
     if (s > 0)cout << buffer; // 读取请求
 
-    std::string path = getPath(buffer);
-    std::string recourse = ROOT_PATH;
-    recourse += path;
-    std::cout << recourse << std::endl;
+    std::string responese = "HTTP/1.1 301 Permanetly Moved\r\n";
+    responese += "Location: https://cloud.tencent.com\r\n";
+    responese += "\r\n";
+    send(sock,responese.c_str(),responese.size(),0);
+
+    // std::string response = "HTTP/1.1 301 Permanently Moved\r\n";
+    // response += "Location: https://www.qq.com/\r\n"; 
+    // response += "\r\n";
+    // send(sock, response.c_str(), response.size(), 0);
+
+    // std::string path = getPath(buffer);
+    // std::string recourse = ROOT_PATH;
+    // recourse += path;
+    // std::cout << recourse << std::endl;
     
-    std::string html = readFile(recourse);
-    std::size_t pos = recourse.rfind(".");
-    std::string suffix = recourse.substr(pos);
-    cout << suffix << endl;
+    // std::string html = readFile(recourse);
+    // std::size_t pos = recourse.rfind(".");
+    // std::string suffix = recourse.substr(pos);
+    // cout << suffix << endl;
 
-    std::string response;
-    response += "HTTP/1.0 200 OK\r\n";
-    response += "Content-Type: text/html\r\n";
-    response += "Set-Cookie: this is my cookie content;\r\n";
-    response += "\r\n";
-    response += html;
+    // std::string response;
+    // response += "HTTP/1.0 301 OK\r\n";
+    // response += "Content-Type: text/html\r\n";
+    // response += "Set-Cookie: this is my cookie content;\r\n";
+    // response += "\r\n";
+    // response += html;
 
-    send(sock,response.c_str(),response.size(),0);
+    // send(sock,response.c_str(),response.size(),0);
 }
 
 class ServerTcp
