@@ -4,7 +4,6 @@
 #include <stdio.h>
 #include <boost/algorithm/string.hpp>
 #include "/inc/cppjieba/Jieba.hpp"
-
 #include<iostream>
 #include<fstream>
 #include<string>
@@ -18,21 +17,23 @@ namespace ns_util{
         public:
             static bool ReadFile(const std::string &file_path,std::string *out){
                 
-                std::ifstream in(file_path,std::ios::in);
+               for(const std::string &file:files_list){
+
+                 std::ifstream in(file_path,std::ios::in);
                 if(in.is_open()){
 
                     std::cerr <<"open file"<<std::endl;
                     return false;
 
-                }          
+                } 
+
+               }      
 
                 std::string line;
                 while(std::getline(in,line)){
-
-
                 *out += line;
-
                 }
+                
                 in.close();
                 return true;
             }
