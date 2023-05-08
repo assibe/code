@@ -21,7 +21,7 @@
 
  using namespace std;
 
-namespace ns_index{
+namespace ns_index{//索引的所有的东西
 
     typedef struct DocInfo{
         
@@ -31,15 +31,19 @@ namespace ns_index{
         int doc_id;
 
     }DocInfo;
+
+    Index* Index::instance = nullptr;
+    std::mutex Index::mtx;
     
     struct InvertedElem{
+
         uint64_t doc_id;
         std::string word;
         int weight;
+
     }
 
     typedef  vector<InvertedElem> InvertedList;
-
 
 
     class Index{
@@ -48,8 +52,9 @@ namespace ns_index{
         vector<DocInfo> forward_index;
         unordered_map<string,InvertedList> inverted_index;
 
-    private:
+        //单例模式
         Index(){};
+        ~Index(){};
         Index(const Index&) = delete;
         Index& operator = (const Index&) = delete;
 
@@ -67,7 +72,7 @@ namespace ns_index{
         }
   
 
-    DocInfo *GetForwardIndex(uint64_t doc_id){
+    DocInfo *GetForwardIndex(uint64_t doc_id){//获得正排
 
         if(doc_id >= forward_index.size()){
             std::cerr << word << "doc_id out range .error" << std::endl;
@@ -87,13 +92,27 @@ namespace ns_index{
             return nullptr;
         }
 
-        return      &(iter->second);     
+        return  &(iter->second);     
     }
 
-    bool BuildIndex(const string &input){
+    bool BuildIndex(const string &input){  //整个数据流的处理从parser之后的文件，读取变成DocInfo的形式，然后建立一个正排的数据库，建立一个倒排的数据库，方便之后进行查询
 
-        std::ifstream in()
+        std::ifstream in(input,std::ios::in | std::ios::binary);///3方式进行读取然后获得系统的相关信息
+        if(!in.is_open()){
+            std::cerr << "sorry," << input << "open error" << std::endl;
+            return false;
+        }
 
+        std::string line;
+        while(std::getline(in,line)){
+
+            DocInfo * doc = BuildForwardIndex(line);
+            if(nullptr == doc){
+                std::cerr << "build" << line << "error" <<std::endl;
+                continue;
+            }
+            BuildInvertedIndex(line);
+        }
         return true;
     };
 
@@ -116,7 +135,7 @@ namespace ns_index{
             forward_index.push_back(doc);
         }
     
-    bool BildInvertedIndex(const DocInfo &doc){
+bool BuildInvertedIndex(const DocInfo &doc){
 
         struct word_cent{
 
@@ -159,7 +178,4 @@ namespace ns_index{
         return true;
     }
     }
-
-    Index* Index::instance = nullptr;
-    std::mutex Index::mtx;
 }
