@@ -1,7 +1,7 @@
 #ifndef util__hpp
 #define util__hpp
 
-#include <util.hpp>
+#include "util.hpp"
 #include <stdio.h>
 #include <vector>
 #include <iostream>
@@ -12,6 +12,7 @@
 #include <util.hpp>
 #include <ctype.h>
 #include <boost.h>
+#include <unoredered_map>
 
 #endif /* util__hpp */
 
@@ -89,7 +90,7 @@ namespace ns_index
             return &forward_index[doc_id];
         }
 
-        DocInfo *GetInvertedList(const string &word)
+        DocInfo *GetInvertedList(const string &word) // 获得倒排索引
         {
 
             auto iter = Inverted_index.find(word);
@@ -129,12 +130,15 @@ namespace ns_index
         };
 
     private:
-        DocInfo *BuildIndex(const string &line){
+        DocInfo *BuildForwardIndex(const string &line)
+        {
 
             std::vector<string> results;
             std::string sep = "/3";
-            CutStringHelper(&line,&results,sep);
-            if(results.size() != 3){
+            ns_util::JiebaUtil::CutString(&line, &results, sep);
+            if (results.size() != 3)
+            {
+                
                 return nullptr;
             }
 
@@ -143,13 +147,10 @@ namespace ns_index
             doc.push_back(results[1]);
             doc.push_back(results[2]);
             doc.doc_id = forward_index.size();
-            
-            return forward_index(doc);
 
+            return forward_index(doc);
         }
 
-
-    
         bool BuildInvertedIndex(const DocInfo &doc)
         {
 
@@ -159,7 +160,7 @@ namespace ns_index
                 int title_cent;
                 int content_cnt;
 
-                word_cent(), title_cent(0), content_cnt(0) {} // 初始化
+                word_cent() : title_cent(0), content_cnt(0) {} // 初始化
             }
 
             std::unoredered_map<std::string, word_cent>
