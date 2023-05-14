@@ -8,7 +8,7 @@ const std::string src_path = "data/input";
 const std::string output = "data/output/raw.txt";
 
 typedef struct DocInfo{
-
+ 
     std::string title;   
     std::string content;    
 	std::string url;     

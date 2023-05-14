@@ -87,19 +87,24 @@ namespace ns_util{
     //             in.close();
     //         }
 
-    //         void CutStringHelper(const std::string &src, std::vector<std::string> *out)
-    //         {
-    //             jieba.CutForSearch(src, *out);
-    //             for(auto iter = out->begin(); iter != out->end(); ){
-    //                 auto it = stop_words.find(*iter);
-    //                 if(it != stop_words.end()){
-    //                     iter = out->erase(iter);
-    //                 }
-    //                 else{
-    //                     iter++;
-    //                 }
-    //             }
-    //         }
+    
+/*
+            void CutStringHelper(const std::string &src, std::vector<std::string> *out)
+            {
+                jieba.CutForSearch(src, *out);
+                for(auto iter = out->begin(); iter != out->end(); ){
+                    auto it = stop_words.find(*iter);
+                    if(it != stop_words.end()){
+                        iter = out->erase(iter);
+                    }
+                    else{
+                        iter++;
+                    }
+                }
+            }
+
+*/
+
 
     //     public:
     //         static void CutString(const std::string &src, std::vector<std::string> *out)
