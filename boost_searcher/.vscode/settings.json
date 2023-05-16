@@ -54,7 +54,15 @@
         "typeindex": "cpp",
         "typeinfo": "cpp",
         "valarray": "cpp",
-        "*.ipp": "cpp"
+        "*.ipp": "cpp",
+        "forward_list": "cpp",
+        "unordered_set": "cpp",
+        "rope": "cpp",
+        "slist": "cpp",
+        "scoped_allocator": "cpp",
+        "regex": "cpp"
     },
-    "C_Cpp.errorSquiggles": "disabled"
+    "C_Cpp.errorSquiggles": "disabled",
+    "git.ignoreLimitWarning": true,
+    "cmake.sourceDirectory": "/home/zhorenxi/code/boost_searcher/boost_1_82_0/boost/safe_numerics/concept"
 }

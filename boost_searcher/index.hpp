@@ -9,6 +9,7 @@
 #include <string>
 #include <cerror>
 #include <map>
+#include <mutex>
 #include <util.hpp>
 #include <ctype.h>
 #include <boost.h>
@@ -16,13 +17,13 @@
 
 #endif /* util__hpp */
 
-#define Y
-#define X
+#define Y 10
+#define X 1
 
 using namespace std;
 
 namespace ns_index
-{ // 索引的所有的东西
+{ // 建立索引字段
 
     typedef struct DocInfo
     {
@@ -37,6 +38,9 @@ namespace ns_index
     Index *Index::instance = nullptr;
     std::mutex Index::mtx;
 
+    // Index *Index::instance = nullptr;
+    // std::mutex Index::mtx;
+
     struct InvertedElem
     {
 
@@ -49,18 +53,21 @@ namespace ns_index
     typedef vector<InvertedElem>
         InvertedList;
 
-    class Index
+    class Index // 索引模块
     {
 
     private:
         vector<DocInfo> forward_index;
         unordered_map<string, InvertedList> inverted_index;
 
-        // 单例模式
+        //单例
         Index(){};
         ~Index(){};
-        Index(const Index &) = delete;
-        Index &operator=(const Index &) = delete;
+        Index(const Index&) = delete;
+        Index &operator = (const Index &) = delete;
+        static Index *instance;
+
+
 
     public:
         static Index *GetInstance()
@@ -69,17 +76,20 @@ namespace ns_index
             if (nullptr == instance)
             {
 
-                mtx.lock();
-                if (nullptr == instance)
+                mux.lock();
+                if (nullptr == instance)//外层的判断是为了提高效率，里层的判断就是第一次实例化需要，不需要不断申请与释放锁
                 {
                     instance = new Index();
                 }
-                mtx.unlock();
+                mux.unlock();
+
             }
+
+            return instance;
         }
 
         DocInfo *GetForwardIndex(uint64_t doc_id)
-        { // 获得正排
+        { // 获得正排索引（使用正排索引）
 
             if (doc_id >= forward_index.size())
             {
@@ -90,7 +100,7 @@ namespace ns_index
             return &forward_index[doc_id];
         }
 
-        DocInfo *GetInvertedList(const string &word) // 获得倒排索引
+        DocInfo *GetInvertedList(const string &word) //使用倒排
         {
 
             auto iter = Inverted_index.find(word);
@@ -105,9 +115,9 @@ namespace ns_index
         }
 
         bool BuildIndex(const string &input)
-        { // 整个数据流的处理从parser之后的文件，读取变成DocInfo的形式，然后建立一个正排的数据库，建立一个倒排的数据库，方便之后进行查询
+        { // 建立索引（使用文件input建立搜索的索引的基本文件结构[]）
 
-            std::ifstream in(input, std::ios::in | std::ios::binary); /// 3方式进行读取然后获得系统的相关信息
+            std::ifstream in(input, std::ios::in | std::ios::binary); // 使用文件指针对于数据进行读取
             if (!in.is_open())
             {
                 std::cerr << "sorry," << input << "open error" << std::endl;
@@ -118,27 +128,26 @@ namespace ns_index
             while (std::getline(in, line))
             {
 
-                DocInfo *doc = BuildForwardIndex(line);
+                DocInfo *doc = BuildForwardIndex(line); // 把读取的数据一行的数据建立一个正排索引
                 if (nullptr == doc)
                 {
                     std::cerr << "build" << line << "error" << std::endl;
                     continue;
                 }
-                BuildInvertedIndex(line);
+                BuildInvertedIndex(line); // 建立一个倒排索引
             }
             return true;
         };
 
     private:
-        DocInfo *BuildForwardIndex(const string &line)
+        DocInfo *BuildForwardIndex(const string &line) // 建立倒排索引其中的一个数据
         {
 
             std::vector<string> results;
             std::string sep = "/3";
-            ns_util::JiebaUtil::CutString(&line, &results, sep);
+            ns_util::JiebaUtil::CutString(line, &results, sep);
             if (results.size() != 3)
             {
-                
                 return nullptr;
             }
 
@@ -148,55 +157,56 @@ namespace ns_index
             doc.push_back(results[2]);
             doc.doc_id = forward_index.size();
 
-            return forward_index(doc);
+            forward_index.push_back(std::move(DocInfo));
+            return &forward_index.back();
         }
 
         bool BuildInvertedIndex(const DocInfo &doc)
-        {
+        { // 建立倒排索引
 
             struct word_cent
             {
 
                 int title_cent;
-                int content_cnt;
+                int content_cent;
 
-                word_cent() : title_cent(0), content_cnt(0) {} // 初始化
+                word_cent() : title_cent(0), content_cent(0) {}
             }
 
-            std::unoredered_map<std::string, word_cent>
+            std::unordered_map<std::string, word_cent>
                 word_map;
-
             std::vector<std::string> title_words;
-            ns_util::jiebaUtil::CutString(doc, title, &title_words);
+            ns_util::JiebaUtil::CutString(doc.title, &title_words);
 
             for (auto &s : title_words)
             {
+
                 boost::to_lower(s);
-                word_cent[s].title_cent++;
+                word_map[s].title_cent++;
             }
 
             std::vector<std::string> content_words;
             ns_util::JiebaUtil::CutString(doc.content, &content_words);
-
-            for (string &s : content_words)
+            for (auto &s : content_words)
             {
-
-                boost::to_lower(s);
-                word_cent[s].centent_cent++;
+                boost::is_lower(s);
+                word_map[s].content_cent++;
             }
 
-            for (auto &word_pair : word_map)
+            for (auto &s : word_map)
             {
 
                 InvertedElem item;
                 item.doc_id = doc.doc_id;
-                item.word = word_pair.first;
-                item.weight = X * word_pair.second.title _cnt + Y * word_pair.second.content_cent;
-                InvertedList &inverted_list = inverted_index[word_pair.first];
+                item.word = s.first;
+
+                item.weight = Y * s.second.title_cent + X * s.second.content_cent;
+                InvertedList &inverted_list = inverted_index[s.first]; // 创建unordered_map<string, InvertedList> inverted_index之中的一个对象，并且引用对象的地址
                 Inverted_list.push_back(std::move(item));
             }
 
             return true;
         }
+
+        Index *Index::instance = nullptr;
     }
-}

@@ -1,4 +1,4 @@
-// #pragma searcher_hpp
+#pragma searcher_hpp
 // #include <util.hpp>
 // #include <index.hpp>
 
@@ -6,10 +6,12 @@
 #ifndef searcher_hpp
 #define search.hpp
 
-#include <util.hpp>
+#include "util.hpp"
 #include <string>
 #include <index.hpp>
 #include <vector>
+#include <util.hpp>
+#include <index.hpp>
 #include <jsoncpp/json/json.h>
 
 #endif
@@ -23,8 +25,8 @@ namespace ns_searcher{
     ns_index::Index *index;
         /* data */
     public:
-        Searcher(/* args */);
-        ~Searcher();
+        Searcher(/* args */){};
+        ~Searcher(){};
 
         void Initsearcher(const std::string &input){
 
@@ -33,6 +35,32 @@ namespace ns_searcher{
             index->BuildIndex(input);
         }
 
+        void Searcher(const std::string &query,std::string *json_string){
+
+            std::vector<std::string> words;
+            std::jiebaUtil::CutString(query,&words);
+
+            ns_index::InvertedList 
+            //倒排
+
+            
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                       //query代表搜索关键字，json_string返回给用户浏览器的结果
         void Searcher(const std::string &query,std::string *json_string){
             
             std::vector <std::string> words;
@@ -50,27 +78,27 @@ namespace ns_searcher{
                 inverted_list_all.insert(inverted_list_all.end(),inverted_list->begin(),inverted_list->end(),
                 [](const ns_index::InvertedElem &e1,const ns_index::InvertedElem &e2){
                     e1.weight > e2.weight}
-                );
+                });
             }
 
             for(auto &item : inverted_list_all){
                 
-                Json::Value root;
-                ns_index::DoInfo *doc = index->GetForwardIndex(item,doc_id);
+                // Json::Value root;
+                ns_index::DoInfo *doc = index->GetForwardIndex(item.doc_id);
                 if(nullptr == doc){
                     continue;
                 }
 
-                Json::Value elem = doc->title;
-                elem["title"] = doc->title;
-                elem["desc"] = doc->content;
-                elem["url"] = doc->url;
+                // Json::Value elem = doc->title;
+                // elem["title"] = doc->title;
+                // elem["desc"] = doc->content;
+                // elem["url"] = doc->url;
 
                 root.append(elem);
                 }
 
-                Json::StyledWriter writer;
-                *json_string = writer.write(root);
+                // Json::StyledWriter writer;
+                // *json_string = writer.write(root);
         }
     };
     
