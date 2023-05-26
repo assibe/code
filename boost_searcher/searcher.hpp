@@ -1,105 +1,141 @@
-#pragma searcher_hpp
-// #include <util.hpp>
-// #include <index.hpp>
+#pragma once
 
-
-#ifndef searcher_hpp
-#define search.hpp
-
+#include "index.hpp"
 #include "util.hpp"
-#include <string>
-#include <index.hpp>
-#include <vector>
-#include <util.hpp>
-#include <index.hpp>
+#include "log.hpp"
+#include <algorithm>
+#include <unordered_map>
 #include <jsoncpp/json/json.h>
 
-#endif
+namespace ns_searcher
+{
 
-namespace ns_searcher{
+    struct InvertedElemPrint
+    {
+        uint64_t doc_id;
+        int weight;
+        std::vector<std::string> words;
+        InvertedElemPrint() : doc_id(0), weight(0) {}
+    };
 
     class Searcher
     {
     private:
-
-    ns_index::Index *index;
-        /* data */
+        ns_index::Index *index; // 供系统进行查找的索引
     public:
-        Searcher(/* args */){};
-        ~Searcher(){};
+        Searcher() {}
+        ~Searcher() {}
 
-        void Initsearcher(const std::string &input){
-
+    public:
+        void InitSearcher(const std::string &input)
+        {
+            // 1. 获取或者创建index对象
             index = ns_index::Index::GetInstance();
-
+            // std::cout << "获取index单例成功..." << std::endl;
+            LOG(NORMAL, "获取index单例成功...");
+            // 2. 根据index对象建立索引
             index->BuildIndex(input);
+            // std::cout << "建立正排和倒排索引成功..." << std::endl;
+            LOG(NORMAL, "建立正排和倒排索引成功...");
         }
-
-        void Searcher(const std::string &query,std::string *json_string){
-
+        // query: 搜索关键字
+        // json_string: 返回给用户浏览器的搜索结果
+        void Search(const std::string &query, std::string *json_string)
+        {
+            // 1.[分词]:对我们的query进行按照searcher的要求进行分词
             std::vector<std::string> words;
-            std::jiebaUtil::CutString(query,&words);
+            ns_util::JiebaUtil::CutString(query, &words);
+            // 2.[触发]:就是根据分词的各个"词"，进行index查找,建立index是忽略大小写，所以搜索，关键字也需要
+            // ns_index::InvertedList inverted_list_all; //内部InvertedElem
+            std::vector<InvertedElemPrint> inverted_list_all;
 
-            ns_index::InvertedList 
-            //倒排
+            std::unordered_map<uint64_t, InvertedElemPrint> tokens_map;
 
-            
-        }
+            for (std::string word : words)
+            {
+                boost::to_lower(word);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                       //query代表搜索关键字，json_string返回给用户浏览器的结果
-        void Searcher(const std::string &query,std::string *json_string){
-            
-            std::vector <std::string> words;
-            std::JiebaUtil::CutString(query,&words);
-
-            ns_index::InvertedList inverted_list_all;
-            for(std::string word: words){
-
-                boost::to_lower(word); 
-                ns_index::InvertedList *inverted_list = index -> GetInvertedList(word);
-                if(nullptr == inverted_list){
+                ns_index::InvertedList *inverted_list = index->GetInvertedList(word);
+                if (nullptr == inverted_list)
+                {
                     continue;
-                    
                 }
-                inverted_list_all.insert(inverted_list_all.end(),inverted_list->begin(),inverted_list->end(),
-                [](const ns_index::InvertedElem &e1,const ns_index::InvertedElem &e2){
-                    e1.weight > e2.weight}
-                });
+                // 不完美的地方：暂时可以交给大家 , 你/是/一个/好人 100
+                // inverted_list_all.insert(inverted_list_all.end(), inverted_list->begin(), inverted_list->end());
+                for (const auto &elem : *inverted_list)
+                {
+                    auto &item = tokens_map[elem.doc_id]; //[]:如果存在直接获取，如果不存在新建
+                    // item一定是doc_id相同的print节点
+                    item.doc_id = elem.doc_id;
+                    item.weight += elem.weight;
+                    item.words.push_back(elem.word);
+                }
+            }
+            for (const auto &item : tokens_map)
+            {
+                inverted_list_all.push_back(std::move(item.second));
             }
 
-            for(auto &item : inverted_list_all){
-                
-                // Json::Value root;
-                ns_index::DoInfo *doc = index->GetForwardIndex(item.doc_id);
-                if(nullptr == doc){
+            std::sort(inverted_list_all.begin(), inverted_list_all.end(),
+                      [](const InvertedElemPrint &e1, const InvertedElemPrint &e2)
+                      {
+                          return e1.weight > e2.weight;
+                      });
+
+            Json::Value root;
+            for (auto &item : inverted_list_all)
+            {
+                ns_index::DocInfo *doc = index->GetForwardIndex(item.doc_id);
+                if (nullptr == doc)
+                {
                     continue;
                 }
-
-                // Json::Value elem = doc->title;
-                // elem["title"] = doc->title;
-                // elem["desc"] = doc->content;
-                // elem["url"] = doc->url;
+                Json::Value elem;
+                elem["title"] = doc->title;
+                elem["desc"] = GetDesc(doc->content, item.words[0]); // content是文档的去标签的结果，我们要的是一部分
+                elem["url"] = doc->url;
+                
+                elem["id"] = (int)item.doc_id;
+                elem["weight"] = item.weight; // int->string
 
                 root.append(elem);
-                }
+            }
 
-                // Json::StyledWriter writer;
-                // *json_string = writer.write(root);
+            // Json::StyledWriter writer;
+            Json::FastWriter writer;
+            *json_string = writer.write(root);
+        }
+
+        std::string GetDesc(const std::string &html_content, const std::string &word)
+        {
+            
+            const int prev_step = 50;
+            const int next_step = 100;
+
+            // 1. 找到首次出现
+            auto iter = std::search(html_content.begin(), html_content.end(), word.begin(), word.end(), [](int x, int y)
+                                    { return (std::tolower(x) == std::tolower(y)); });
+            if (iter == html_content.end())
+            {
+                return "None1";
+            }
+            int pos = std::distance(html_content.begin(), iter);
+
+            // 2. 获取start，end , std::size_t 无符号整数
+            int start = 0;
+            int end = html_content.size() - 1;
+            // 如果之前有50+字符，就更新开始位置
+            if (pos > start + prev_step)
+                start = pos - prev_step;
+            if (pos < end - next_step)
+                end = pos + next_step;
+
+            // 3. 截取子串,return
+            if (start >= end)
+                return "None2";
+            std::string desc = html_content.substr(start, end - start);
+            desc += "...";
+            return desc;
         }
     };
-    
 }
