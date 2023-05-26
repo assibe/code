@@ -1,4 +1,4 @@
-#include "inc/cppjieba/Jieba.hpp"
+#include "../cppjieba/Jieba.hpp"
 #include <iostream>
 #include <string>
 #include <vector>
