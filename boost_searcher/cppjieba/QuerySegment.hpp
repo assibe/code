@@ -4,7 +4,7 @@
 #include <algorithm>
 #include <set>
 #include <cassert>
-#include "/home/zhorenxi/jiebacpp/include/limonp/Logging.hpp"
+#include "../cppjieba/Jieba.hpp"
 #include "DictTrie.hpp"
 #include "SegmentBase.hpp"
 #include "FullSegment.hpp"
